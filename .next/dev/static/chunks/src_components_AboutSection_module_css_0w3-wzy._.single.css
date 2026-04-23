@@ -1,0 +1,121 @@
+/* [project]/src/components/AboutSection.module.css [app-client] (css) */
+.AboutSection-module__UGBiha__section {
+  background: var(--white);
+  padding: 6rem 1.5rem;
+}
+
+.AboutSection-module__UGBiha__container {
+  flex-direction: column;
+  gap: 4rem;
+  max-width: 1040px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.AboutSection-module__UGBiha__header {
+  flex-direction: column;
+  gap: 1.1rem;
+  max-width: 600px;
+  display: flex;
+}
+
+.AboutSection-module__UGBiha__tag {
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--teal-mid);
+  border: 1.5px solid var(--teal-pale);
+  border-radius: 4px;
+  width: fit-content;
+  padding: .3rem .8rem;
+  font-size: .7rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.AboutSection-module__UGBiha__heading {
+  font-family: var(--font-display);
+  color: var(--text-dark);
+  letter-spacing: -.02em;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.AboutSection-module__UGBiha__heading em {
+  color: var(--teal-mid);
+  font-style: italic;
+}
+
+.AboutSection-module__UGBiha__sub {
+  color: var(--text-muted);
+  max-width: 520px;
+  font-size: .95rem;
+  line-height: 1.7;
+}
+
+.AboutSection-module__UGBiha__grid {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  display: grid;
+}
+
+.AboutSection-module__UGBiha__card {
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: 12px;
+  flex-direction: column;
+  gap: .65rem;
+  padding: 2.25rem 2rem;
+  transition: background .2s, border-color .2s, box-shadow .2s;
+  display: flex;
+}
+
+.AboutSection-module__UGBiha__card:hover {
+  background: var(--teal-mist);
+  border-color: var(--teal-light);
+  box-shadow: var(--shadow-sm);
+}
+
+.AboutSection-module__UGBiha__num {
+  font-family: var(--font-display);
+  color: var(--teal-light);
+  letter-spacing: .06em;
+  font-size: .8rem;
+  font-weight: 700;
+}
+
+.AboutSection-module__UGBiha__cardTitle {
+  font-family: var(--font-body);
+  color: var(--text-dark);
+  font-size: .98rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.AboutSection-module__UGBiha__cardBody {
+  color: var(--text-muted);
+  font-size: .865rem;
+  line-height: 1.65;
+}
+
+@media (max-width: 840px) {
+  .AboutSection-module__UGBiha__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  .AboutSection-module__UGBiha__section {
+    padding: 4rem 1.25rem;
+  }
+
+  .AboutSection-module__UGBiha__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .AboutSection-module__UGBiha__container {
+    gap: 2.5rem;
+  }
+}
+
+/*# sourceMappingURL=src_components_AboutSection_module_css_0w3-wzy._.single.css.map*/

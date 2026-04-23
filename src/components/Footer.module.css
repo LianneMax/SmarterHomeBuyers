@@ -1,0 +1,210 @@
+.footer {
+  background: var(--teal-deep);
+  color: rgba(255, 255, 255, 0.75);
+  padding: 3.5rem 1.5rem 2rem;
+}
+
+/* ── Main row ─────────────────────────────────── */
+.main {
+  max-width: 1040px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 4rem;
+  align-items: start;
+}
+
+/* ── Left ─────────────────────────────────────── */
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.identity {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.avatar {
+  position: relative;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  border: 2px solid rgba(255,255,255,0.2);
+  background: var(--teal-mid);
+}
+
+.avatarImg {
+  object-fit: cover;
+  object-position: top center;
+}
+
+.name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--white);
+  font-family: var(--font-display);
+}
+
+.role {
+  font-size: 0.8rem;
+  color: var(--teal-light);
+  margin-top: 0.1rem;
+}
+
+.disclosures {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 0.82rem;
+  line-height: 1.55;
+}
+
+.disclosures strong {
+  color: var(--white);
+  font-weight: 600;
+}
+
+.dot {
+  opacity: 0.5;
+}
+
+.dre {
+  margin-top: 0.35rem;
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.45);
+  max-width: 520px;
+  line-height: 1.6;
+}
+
+/* ── Right ────────────────────────────────────── */
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.85rem;
+}
+
+.contactRow {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.88rem;
+  color: var(--white);
+  font-weight: 500;
+  transition: color 0.15s;
+  text-decoration: none;
+}
+
+.contactRow:hover {
+  color: var(--teal-light);
+}
+
+.contactRow svg {
+  color: var(--teal-light);
+  flex-shrink: 0;
+}
+
+.housingBadge {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--white);
+  margin-top: 0.25rem;
+}
+
+.housingBadge svg {
+  color: var(--teal-light);
+}
+
+/* ── Divider ──────────────────────────────────── */
+.divider {
+  max-width: 1040px;
+  margin: 2.5rem auto 1.75rem;
+  height: 1px;
+  background: rgba(255,255,255,0.1);
+}
+
+/* ── Bottom ───────────────────────────────────── */
+.bottom {
+  max-width: 1040px;
+  margin: 0 auto 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.copy {
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.5);
+}
+
+.disclaimer {
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.38);
+  text-align: right;
+  max-width: 460px;
+  line-height: 1.55;
+}
+
+/* ── Legal links ──────────────────────────────── */
+.legalLinks {
+  max-width: 1040px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.1rem;
+  align-items: center;
+}
+
+.legalItem {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.legalItem a {
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.38);
+  transition: color 0.15s;
+  text-decoration: none;
+}
+
+.legalItem a:hover {
+  color: rgba(255,255,255,0.7);
+}
+
+.legalItem .dot {
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.2);
+  padding: 0 0.1rem;
+}
+
+/* ── Responsive ───────────────────────────────── */
+@media (max-width: 768px) {
+  .main {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .right {
+    align-items: flex-start;
+  }
+
+  .bottom {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .disclaimer {
+    text-align: left;
+  }
+}

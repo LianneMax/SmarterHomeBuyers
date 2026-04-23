@@ -1,0 +1,55 @@
+/* [project]/src/components/BookModal.module.css [app-client] (css) */
+.BookModal-module__Qffdra__container {
+  flex-direction: column;
+  max-height: 90vh;
+  display: flex;
+  overflow-y: auto;
+}
+
+.BookModal-module__Qffdra__header {
+  flex-direction: column;
+  gap: .5rem;
+  padding: 2rem 2.5rem 1rem;
+  display: flex;
+}
+
+.BookModal-module__Qffdra__badge {
+  background: var(--teal-pale);
+  color: var(--teal-dark);
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  border-radius: 100px;
+  width: fit-content;
+  padding: .35rem .85rem;
+  font-size: .75rem;
+  font-weight: 700;
+  display: inline-block;
+}
+
+.BookModal-module__Qffdra__title {
+  color: var(--text-dark);
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.BookModal-module__Qffdra__subtitle {
+  color: var(--text-muted);
+  font-size: .9rem;
+}
+
+.modal {
+  max-width: 680px;
+}
+
+@media (max-width: 480px) {
+  .BookModal-module__Qffdra__header {
+    padding: 1.5rem 1.5rem .75rem;
+  }
+
+  .BookModal-module__Qffdra__title {
+    font-size: 1.25rem;
+  }
+}
+
+/*# sourceMappingURL=src_components_BookModal_module_css_0w3-wzy._.single.css.map*/

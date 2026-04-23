@@ -1,0 +1,61 @@
+/* [project]/src/components/StatsStrip.module.css [app-client] (css) */
+.StatsStrip-module__xodaVW__strip {
+  background: var(--teal-dark);
+  grid-template-columns: repeat(4, 1fr);
+  padding: 0 1.5rem;
+  display: grid;
+}
+
+.StatsStrip-module__xodaVW__stat {
+  border-right: 1px solid #ffffff1a;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: .35rem;
+  padding: 2.25rem 1rem;
+  transition: background .2s;
+  display: flex;
+}
+
+.StatsStrip-module__xodaVW__stat:last-child {
+  border-right: none;
+}
+
+.StatsStrip-module__xodaVW__stat:hover {
+  background: #ffffff0d;
+}
+
+.StatsStrip-module__xodaVW__value {
+  font-family: var(--font-display);
+  color: var(--white);
+  letter-spacing: -.02em;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  font-weight: 700;
+  line-height: 1;
+}
+
+.StatsStrip-module__xodaVW__label {
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: #ffffff8c;
+  text-align: center;
+  font-size: .72rem;
+  font-weight: 500;
+}
+
+@media (max-width: 640px) {
+  .StatsStrip-module__xodaVW__strip {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0;
+  }
+
+  .StatsStrip-module__xodaVW__stat:nth-child(2) {
+    border-right: none;
+  }
+
+  .StatsStrip-module__xodaVW__stat:first-child, .StatsStrip-module__xodaVW__stat:nth-child(2) {
+    border-bottom: 1px solid #ffffff1a;
+  }
+}
+
+/*# sourceMappingURL=src_components_StatsStrip_module_css_0w3-wzy._.single.css.map*/

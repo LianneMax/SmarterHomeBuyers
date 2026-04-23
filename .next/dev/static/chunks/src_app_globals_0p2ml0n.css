@@ -1,0 +1,246 @@
+/* [project]/src/app/globals.css [app-client] (css) */
+*, :before, :after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --teal-deep: #1e3d4a;
+  --teal-dark: #2c5364;
+  --teal-mid: #3d6b7a;
+  --teal-light: #5b9ba8;
+  --teal-pale: #ebf4f6;
+  --teal-mist: #f2f8fa;
+  --sand: #f7f5f2;
+  --white: #fff;
+  --text-dark: #111c21;
+  --text-body: #374248;
+  --text-muted: #6b8a95;
+  --border: #d8e8ec;
+  --font-display: "Outfit", -apple-system, sans-serif;
+  --font-body: "Outfit", -apple-system, sans-serif;
+  --shadow-sm: 0 2px 12px #1e3d4a14;
+  --shadow-md: 0 6px 28px #1e3d4a21;
+  --shadow-lg: 0 16px 56px #1e3d4a2e;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--white);
+  color: var(--text-body);
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.65;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+  font-family: inherit;
+}
+
+.overlay {
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  z-index: 1000;
+  background: #111c2199;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  animation: .2s fadeIn;
+  display: flex;
+  position: fixed;
+  inset: 0;
+}
+
+.modal {
+  background: var(--white);
+  box-shadow: var(--shadow-lg);
+  border-radius: 20px;
+  width: 100%;
+  max-width: 560px;
+  animation: .25s slideUp;
+  position: relative;
+  overflow: hidden;
+}
+
+.modal-close {
+  background: var(--teal-mist);
+  width: 34px;
+  height: 34px;
+  color: var(--teal-dark);
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  transition: background .15s;
+  display: flex;
+  position: absolute;
+  top: 1.1rem;
+  right: 1.1rem;
+}
+
+.modal-close:hover {
+  background: var(--teal-pale);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.reveal {
+  opacity: 0;
+  transition: opacity .6s, transform .6s;
+  transform: translateY(32px);
+}
+
+.reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-delay-1 {
+  transition-delay: .12s;
+}
+
+.reveal-delay-2 {
+  transition-delay: .24s;
+}
+
+.reveal-delay-3 {
+  transition-delay: .36s;
+}
+
+.fade-up {
+  opacity: 0;
+  transition: opacity .65s, transform .65s;
+  transform: translateY(28px);
+}
+
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-up-delay-1 {
+  transition-delay: .1s;
+}
+
+.fade-up-delay-2 {
+  transition-delay: .2s;
+}
+
+.fade-up-delay-3 {
+  transition-delay: .3s;
+}
+
+.btn-primary {
+  background: var(--teal-dark);
+  color: var(--white);
+  border: 2px solid var(--teal-dark);
+  font-family: var(--font-body);
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  padding: .9rem 2.1rem;
+  font-size: .8rem;
+  font-weight: 600;
+  transition: background .2s, transform .15s, box-shadow .2s;
+  display: inline-flex;
+}
+
+.btn-primary:hover {
+  background: var(--teal-deep);
+  border-color: var(--teal-deep);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  color: var(--teal-dark);
+  border: 2px solid var(--teal-dark);
+  font-family: var(--font-body);
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  background: none;
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  padding: .9rem 2.1rem;
+  font-size: .8rem;
+  font-weight: 600;
+  transition: background .2s, color .2s, transform .15s, box-shadow .2s;
+  display: inline-flex;
+}
+
+.btn-outline:hover {
+  background: var(--teal-pale);
+  box-shadow: var(--shadow-sm);
+  transform: translateY(-2px);
+}
+
+.btn-outline-white {
+  color: var(--white);
+  font-family: var(--font-body);
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  background: none;
+  border: 2px solid #ffffff80;
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  padding: .9rem 2.1rem;
+  font-size: .8rem;
+  font-weight: 600;
+  transition: background .2s, border-color .2s, transform .15s;
+  display: inline-flex;
+}
+
+.btn-outline-white:hover {
+  border-color: var(--white);
+  background: #ffffff1a;
+  transform: translateY(-2px);
+}
+
+/*# sourceMappingURL=src_app_globals_0p2ml0n.css.map*/
