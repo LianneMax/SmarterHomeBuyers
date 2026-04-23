@@ -8,15 +8,50 @@
 .HeroSection-module__sBkrQG__panel {
   background: var(--teal-dark);
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem 2rem;
   display: flex;
   position: relative;
   overflow: hidden;
 }
 
-.HeroSection-module__sBkrQG__photoWrap {
+.HeroSection-module__sBkrQG__panelBg {
+  pointer-events: none;
+  background-image: radial-gradient(circle, #ffffff0e 1px, #0000 1px);
+  background-size: 28px 28px;
   position: absolute;
   inset: 0;
+}
+
+.HeroSection-module__sBkrQG__panelBg:before {
+  content: "";
+  background: radial-gradient(85% 65% at 50% 46%, #5b9ba833 0%, #0000 70%);
+  position: absolute;
+  inset: 0;
+}
+
+.HeroSection-module__sBkrQG__photoArea {
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 360px;
+  height: 310px;
+  display: flex;
+  position: relative;
+}
+
+.HeroSection-module__sBkrQG__photoWrap {
+  z-index: 2;
+  border-radius: 50%;
+  flex-shrink: 0;
+  width: 220px;
+  height: 220px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 0 5px #ffffff1f, 0 0 0 11px #ffffff0d, 0 24px 72px #00000080;
 }
 
 .HeroSection-module__sBkrQG__photo {
@@ -24,27 +59,80 @@
   object-position: top center;
 }
 
-.HeroSection-module__sBkrQG__panelOverlay {
-  z-index: 2;
-  background: linear-gradient(to top, #1e3d4aeb 0%, #1e3d4a4d 60%, #0000 100%);
-  padding: 2.5rem;
-  position: relative;
+.HeroSection-module__sBkrQG__chip {
+  -webkit-backdrop-filter: blur(16px);
+  z-index: 3;
+  white-space: nowrap;
+  background: #ffffff17;
+  border: 1px solid #ffffff26;
+  border-radius: 12px;
+  align-items: center;
+  gap: .55rem;
+  padding: .55rem .75rem;
+  display: flex;
+  position: absolute;
+}
+
+.HeroSection-module__sBkrQG__chipRating {
+  top: 18px;
+  right: 0;
+}
+
+.HeroSection-module__sBkrQG__chipClose {
+  bottom: 18px;
+  right: 0;
+}
+
+.HeroSection-module__sBkrQG__chipStates {
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.HeroSection-module__sBkrQG__chipIconWrap {
+  width: 30px;
+  height: 30px;
+  color: var(--teal-light);
+  background: #5b9ba847;
+  border-radius: 8px;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.HeroSection-module__sBkrQG__chipVal {
+  color: var(--white);
+  font-size: .77rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.HeroSection-module__sBkrQG__chipLbl {
+  color: #ffffff80;
+  font-size: .61rem;
+  line-height: 1.2;
+}
+
+.HeroSection-module__sBkrQG__nameBlock {
+  text-align: center;
+  z-index: 1;
 }
 
 .HeroSection-module__sBkrQG__panelLabel {
   font-family: var(--font-body);
-  letter-spacing: .18em;
+  letter-spacing: .16em;
   text-transform: uppercase;
-  color: #ffffff8c;
-  margin-bottom: .4rem;
-  font-size: .7rem;
+  color: #ffffff80;
+  margin-bottom: .3rem;
+  font-size: .67rem;
   font-weight: 600;
 }
 
 .HeroSection-module__sBkrQG__panelName {
   font-family: var(--font-display);
   color: var(--white);
-  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  font-size: clamp(1.4rem, 2.5vw, 1.9rem);
   font-weight: 700;
   line-height: 1.15;
 }
@@ -152,9 +240,18 @@
   }
 
   .HeroSection-module__sBkrQG__panel {
-    height: 55vw;
-    min-height: 280px;
-    max-height: 420px;
+    min-height: 360px;
+    padding: 2.5rem 1.5rem;
+  }
+
+  .HeroSection-module__sBkrQG__photoArea {
+    max-width: 300px;
+    height: 260px;
+  }
+
+  .HeroSection-module__sBkrQG__photoWrap {
+    width: 180px;
+    height: 180px;
   }
 
   .HeroSection-module__sBkrQG__content {
@@ -164,7 +261,28 @@
 
 @media (max-width: 480px) {
   .HeroSection-module__sBkrQG__panel {
-    height: 70vw;
+    min-height: 300px;
+    padding: 2rem 1rem;
+  }
+
+  .HeroSection-module__sBkrQG__photoArea {
+    max-width: 260px;
+    height: 220px;
+  }
+
+  .HeroSection-module__sBkrQG__photoWrap {
+    width: 150px;
+    height: 150px;
+  }
+
+  .HeroSection-module__sBkrQG__chip {
+    gap: .4rem;
+    padding: .4rem .55rem;
+  }
+
+  .HeroSection-module__sBkrQG__chipIconWrap {
+    width: 24px;
+    height: 24px;
   }
 
   .HeroSection-module__sBkrQG__content {

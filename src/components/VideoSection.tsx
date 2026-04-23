@@ -6,15 +6,56 @@ import { useScrollReveal } from "@/hooks/useScrollReveal";
 import styles from "./VideoSection.module.css";
 
 const FEATURED = {
-  id: "xds3hsK1Oqo",
+  id: "JjEbd-vSZV4",
   title: "How To Get Prequalified For A Home Loan",
   label: "Start Here",
 };
 
 const SECONDARY = [
-  { id: "RbpStZHnPCI", title: "VA vs Conventional — Which Loan Is Right for You?" },
-  { id: "E-5uS0c8kYs", title: "How To Buy A House In 2024: 5 Steps" },
-  { id: "rjCXXDPljE4", title: "5 Mortgage Mistakes That Cost You Thousands" },
+  { id: "TD1ahQAGkuQ", title: "VA vs Conventional — Which Loan Is Right for You?" },
+  { id: "ulTVOMnOVS4", title: "How To Buy A House In 2024: 5 Steps" },
+  { id: "I4sXpzq5AF0", title: "5 Mortgage Mistakes That Cost You Thousands" },
+];
+
+const PLAYLISTS = [
+  {
+    title: "Real Estate Market Updates & News",
+    description: "Is now the right time to buy? Darren tracks rate shifts, market trends, and what they actually mean for your move.",
+    url: "https://youtube.com/playlist?list=PLmNxrYNLvOsf4_9eI1odG0RtvvI7V0vzh&si=clU1r1HaNLokys0F",
+    gradient: "linear-gradient(135deg, #F59E0B 0%, #EF4444 100%)",
+    badge: "Market Intel",
+    icon: (
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+        <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/>
+        <polyline points="16 7 22 7 22 13"/>
+      </svg>
+    ),
+  },
+  {
+    title: "Maximizing Home Equity & Refinancing",
+    description: "Already own? Cash-out, rate drops, smart refi timing — make your equity work harder without getting burned.",
+    url: "https://youtube.com/playlist?list=PLmNxrYNLvOsfX_sHuKsVtESbIeifmjDpa&si=cDKxnZXeubXsMTbG",
+    gradient: "linear-gradient(135deg, #10B981 0%, #0891B2 100%)",
+    badge: "For Owners",
+    icon: (
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+        <polyline points="9 22 9 12 15 12 15 22"/>
+      </svg>
+    ),
+  },
+  {
+    title: "First-Time Home Buyer's Guide",
+    description: "Never bought before? This is where you start. Pre-approval to closing day — every step, zero confusion.",
+    url: "https://youtube.com/playlist?list=PLmNxrYNLvOsf0vIMZzpjHo6OGklQIw5T0&si=62_zqBkOcXKYR6",
+    gradient: "linear-gradient(135deg, #6366F1 0%, #3B82F6 100%)",
+    badge: "Start Here",
+    icon: (
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/>
+      </svg>
+    ),
+  },
 ];
 
 function VideoCard({
@@ -50,7 +91,11 @@ function VideoCard({
             src={`https://img.youtube.com/vi/${id}/maxresdefault.jpg`}
             alt={title}
             fill
-            sizes={large ? "100vw" : "(max-width: 768px) 100vw, 33vw"}
+            sizes={
+              large
+                ? "(max-width: 640px) calc(100vw - 2.5rem), (max-width: 1100px) calc(100vw - 3rem), 1040px"
+                : "(max-width: 640px) calc(100vw - 2.5rem), (max-width: 1100px) calc((100vw - 5rem) / 3), 336px"
+            }
             className={styles.thumbImg}
           />
           <div className={styles.overlay}>
@@ -80,6 +125,7 @@ function VideoCard({
 export default function VideoSection() {
   const headerRef = useScrollReveal<HTMLDivElement>();
   const videosRef = useScrollReveal<HTMLDivElement>(80);
+  const playlistsRef = useScrollReveal<HTMLDivElement>(80);
 
   return (
     <section className={styles.section}>
@@ -95,21 +141,58 @@ export default function VideoSection() {
               href="https://www.youtube.com/@DarrenTsai_"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-outline-white"
+              className={styles.channelBtn}
             >
+              <span className={styles.ytDot} aria-hidden="true" />
               Visit the Channel
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
             </a>
           </div>
         </div>
 
         <div ref={videosRef} className="reveal">
-        <VideoCard id={FEATURED.id} title={FEATURED.title} label={FEATURED.label} large />
-
-        <div className={styles.grid}>
-          {SECONDARY.map((v) => (
-            <VideoCard key={v.id} id={v.id} title={v.title} />
-          ))}
+          <VideoCard id={FEATURED.id} title={FEATURED.title} label={FEATURED.label} large />
+          <div className={styles.grid}>
+            {SECONDARY.map((v) => (
+              <VideoCard key={v.id} id={v.id} title={v.title} />
+            ))}
+          </div>
         </div>
+
+        {/* Playlists */}
+        <div ref={playlistsRef} className={`${styles.playlistsSection} reveal`}>
+          <div className={styles.playlistsHeader}>
+            <h3 className={styles.playlistsTitle}>Browse the Series</h3>
+            <p className={styles.playlistsSub}>Structured playlists for wherever you are in the journey.</p>
+          </div>
+          <div className={styles.playlistsGrid}>
+            {PLAYLISTS.map((p) => (
+              <a
+                key={p.title}
+                href={p.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.playlistCard}
+              >
+                <div className={styles.playlistBanner} style={{ background: p.gradient }}>
+                  <span className={styles.playlistIcon}>{p.icon}</span>
+                  <span className={styles.playlistBadge}>{p.badge}</span>
+                </div>
+                <div className={styles.playlistBody}>
+                  <p className={styles.playlistTitle}>{p.title}</p>
+                  <p className={styles.playlistDesc}>{p.description}</p>
+                  <span className={styles.playlistCta}>
+                    Watch Playlist
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                  </span>
+                </div>
+              </a>
+            ))}
+          </div>
         </div>
       </div>
     </section>

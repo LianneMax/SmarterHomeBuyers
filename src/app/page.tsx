@@ -10,18 +10,18 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <main style={{ paddingTop: "64px" }}>
+      <main>
         <section id="home">
           <HeroSection />
         </section>
         <StatsStrip />
-        <section id="about">
+        <section id="about" style={{ scrollMarginTop: "74px" }}>
           <AboutSection />
         </section>
-        <section id="reviews">
+        <section id="reviews" style={{ scrollMarginTop: "74px" }}>
           <Reviews />
         </section>
-        <section id="education">
+        <section id="education" style={{ scrollMarginTop: "74px" }}>
           <VideoSection />
         </section>
         <Footer />

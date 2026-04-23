@@ -12,20 +12,65 @@ export default function HeroSection() {
 
   return (
     <section className={styles.section}>
-      {/* Left — photo panel */}
+      {/* Left — dynamic photo panel */}
       <div className={styles.panel}>
-        <div className={styles.photoWrap}>
-          <Image
-            src="/darren.jpg"
-            alt="Darren Tsai"
-            fill
-            sizes="42vw"
-            className={styles.photo}
-            priority
-          />
+        <div className={styles.panelBg} aria-hidden="true" />
+
+        <div className={styles.photoArea}>
+          {/* Floating stat badges */}
+          <div className={`${styles.chip} ${styles.chipRating}`} aria-hidden="true">
+            <span className={styles.chipIconWrap}>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+              </svg>
+            </span>
+            <div>
+              <p className={styles.chipVal}>5.0 Stars</p>
+              <p className={styles.chipLbl}>Avg. Rating</p>
+            </div>
+          </div>
+
+          <div className={`${styles.chip} ${styles.chipClose}`} aria-hidden="true">
+            <span className={styles.chipIconWrap}>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                <polyline points="9 22 9 12 15 12 15 22" />
+              </svg>
+            </span>
+            <div>
+              <p className={styles.chipVal}>18-Day Close</p>
+              <p className={styles.chipLbl}>Fastest Close</p>
+            </div>
+          </div>
+
+          <div className={`${styles.chip} ${styles.chipStates}`} aria-hidden="true">
+            <span className={styles.chipIconWrap}>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+            </span>
+            <div>
+              <p className={styles.chipVal}>8 States</p>
+              <p className={styles.chipLbl}>Licensed</p>
+            </div>
+          </div>
+
+          {/* Circular portrait */}
+          <div className={styles.photoWrap}>
+            <Image
+              src="/darren.jpg"
+              alt="Darren Tsai"
+              fill
+              sizes="240px"
+              className={styles.photo}
+              priority
+            />
+          </div>
         </div>
-        <div className={styles.panelOverlay}>
-          <p className={styles.panelLabel}>Senior Loan Consultant</p>
+
+        <div className={styles.nameBlock}>
+          <p className={styles.panelLabel}>Senior Loan Consultant · Saxton Mortgage</p>
           <h2 className={styles.panelName}>Darren Tsai</h2>
         </div>
       </div>

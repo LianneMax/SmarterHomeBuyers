@@ -1,29 +1,76 @@
-.strip {
+.outer {
   background: var(--teal-dark);
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  padding: 0 1.5rem;
+  padding: 2rem 1.5rem;
 }
 
-.stat {
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+/* ── Card ────────────────────────────────────── */
+.card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 0.35rem;
-  padding: 2.25rem 1rem;
-  border-right: 1px solid rgba(255, 255, 255, 0.1);
-  transition: background 0.2s;
+  gap: 0.55rem;
+  padding: 2rem 1rem 1.75rem;
+  cursor: default;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.28s cubic-bezier(0.34, 1.56, 0.64, 1), background 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
 
-.stat:last-child {
-  border-right: none;
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 70% 50% at 50% 0%, color-mix(in srgb, var(--accent) 18%, transparent) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
-.stat:hover {
-  background: rgba(255, 255, 255, 0.05);
+.card:hover {
+  transform: translateY(-6px);
+  background: rgba(255, 255, 255, 0.11);
+  border-color: color-mix(in srgb, var(--accent) 40%, rgba(255,255,255,0.18));
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.28), 0 0 0 1px color-mix(in srgb, var(--accent) 20%, transparent);
 }
 
+.card:hover::before {
+  opacity: 1;
+}
+
+/* ── Icon ────────────────────────────────────── */
+.iconWrap {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--accent) 18%, rgba(255,255,255,0.06));
+  border: 1px solid color-mix(in srgb, var(--accent) 30%, rgba(255,255,255,0.1));
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform 0.28s cubic-bezier(0.34, 1.56, 0.64, 1), background 0.25s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.card:hover .iconWrap {
+  transform: scale(1.12) rotate(-4deg);
+  background: color-mix(in srgb, var(--accent) 28%, rgba(255,255,255,0.08));
+}
+
+/* ── Value ───────────────────────────────────── */
 .value {
   font-family: var(--font-display);
   font-size: clamp(1.8rem, 3vw, 2.6rem);
@@ -31,29 +78,49 @@
   color: var(--white);
   line-height: 1;
   letter-spacing: -0.02em;
+  position: relative;
+  z-index: 1;
+  transition: color 0.25s ease;
 }
 
+.card:hover .value {
+  color: color-mix(in srgb, var(--accent) 40%, var(--white));
+}
+
+/* ── Label ───────────────────────────────────── */
 .label {
-  font-size: 0.72rem;
-  font-weight: 500;
+  font-size: 0.68rem;
+  font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.55);
+  color: rgba(255, 255, 255, 0.48);
   text-align: center;
+  position: relative;
+  z-index: 1;
+  transition: color 0.25s ease;
 }
 
-@media (max-width: 640px) {
-  .strip {
+.card:hover .label {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* ── Responsive ──────────────────────────────── */
+@media (max-width: 840px) {
+  .grid {
     grid-template-columns: repeat(2, 1fr);
-    padding: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .outer {
+    padding: 1.5rem 1rem;
   }
 
-  .stat:nth-child(2) {
-    border-right: none;
+  .grid {
+    gap: 0.75rem;
   }
 
-  .stat:nth-child(1),
-  .stat:nth-child(2) {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  .card {
+    padding: 1.5rem 0.75rem 1.35rem;
   }
 }

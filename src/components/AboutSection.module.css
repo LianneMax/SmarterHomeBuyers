@@ -69,6 +69,29 @@
   flex-direction: column;
   gap: 0.65rem;
   transition: background 0.2s, border-color 0.2s, box-shadow 0.2s;
+  position: relative;
+}
+
+.cornerIcon {
+  position: absolute;
+  top: 1.4rem;
+  right: 1.4rem;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: var(--teal-pale);
+  color: var(--teal-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+}
+
+.card:hover .cornerIcon {
+  background: var(--teal-light);
+  color: var(--white);
+  transform: rotate(-8deg) scale(1.08);
 }
 
 .card:hover {

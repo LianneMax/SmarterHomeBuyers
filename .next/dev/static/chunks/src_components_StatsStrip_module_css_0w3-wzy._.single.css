@@ -1,60 +1,123 @@
 /* [project]/src/components/StatsStrip.module.css [app-client] (css) */
-.StatsStrip-module__xodaVW__strip {
+.StatsStrip-module__xodaVW__outer {
   background: var(--teal-dark);
+  padding: 2rem 1.5rem;
+}
+
+.StatsStrip-module__xodaVW__grid {
   grid-template-columns: repeat(4, 1fr);
-  padding: 0 1.5rem;
+  gap: 1rem;
+  max-width: 1040px;
+  margin: 0 auto;
   display: grid;
 }
 
-.StatsStrip-module__xodaVW__stat {
-  border-right: 1px solid #ffffff1a;
+.StatsStrip-module__xodaVW__card {
+  cursor: default;
+  background: #ffffff0f;
+  border: 1px solid #ffffff1a;
+  border-radius: 16px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: .35rem;
-  padding: 2.25rem 1rem;
-  transition: background .2s;
+  gap: .55rem;
+  padding: 2rem 1rem 1.75rem;
+  transition: transform .28s cubic-bezier(.34, 1.56, .64, 1), background .25s, box-shadow .25s, border-color .25s;
   display: flex;
+  position: relative;
+  overflow: hidden;
 }
 
-.StatsStrip-module__xodaVW__stat:last-child {
-  border-right: none;
+.StatsStrip-module__xodaVW__card:before {
+  content: "";
+  background: radial-gradient(ellipse 70% 50% at 50% 0%, color-mix(in srgb, var(--accent) 18%, transparent) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity .3s;
+  position: absolute;
+  inset: 0;
 }
 
-.StatsStrip-module__xodaVW__stat:hover {
-  background: #ffffff0d;
+.StatsStrip-module__xodaVW__card:hover {
+  border-color: color-mix(in srgb, var(--accent) 40%, #ffffff2e);
+  box-shadow: 0 16px 40px #00000047, 0 0 0 1px color-mix(in srgb, var(--accent) 20%, transparent);
+  background: #ffffff1c;
+  transform: translateY(-6px);
+}
+
+.StatsStrip-module__xodaVW__card:hover:before {
+  opacity: 1;
+}
+
+.StatsStrip-module__xodaVW__iconWrap {
+  background: color-mix(in srgb, var(--accent) 18%, #ffffff0f);
+  border: 1px solid color-mix(in srgb, var(--accent) 30%, #ffffff1a);
+  width: 44px;
+  height: 44px;
+  color: var(--accent);
+  z-index: 1;
+  border-radius: 12px;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  transition: transform .28s cubic-bezier(.34, 1.56, .64, 1), background .25s;
+  display: flex;
+  position: relative;
+}
+
+.StatsStrip-module__xodaVW__card:hover .StatsStrip-module__xodaVW__iconWrap {
+  background: color-mix(in srgb, var(--accent) 28%, #ffffff14);
+  transform: scale(1.12)rotate(-4deg);
 }
 
 .StatsStrip-module__xodaVW__value {
   font-family: var(--font-display);
   color: var(--white);
   letter-spacing: -.02em;
+  z-index: 1;
   font-size: clamp(1.8rem, 3vw, 2.6rem);
   font-weight: 700;
   line-height: 1;
+  transition: color .25s;
+  position: relative;
+}
+
+.StatsStrip-module__xodaVW__card:hover .StatsStrip-module__xodaVW__value {
+  color: color-mix(in srgb, var(--accent) 40%, var(--white));
 }
 
 .StatsStrip-module__xodaVW__label {
   letter-spacing: .1em;
   text-transform: uppercase;
-  color: #ffffff8c;
+  color: #ffffff7a;
   text-align: center;
-  font-size: .72rem;
-  font-weight: 500;
+  z-index: 1;
+  font-size: .68rem;
+  font-weight: 600;
+  transition: color .25s;
+  position: relative;
 }
 
-@media (max-width: 640px) {
-  .StatsStrip-module__xodaVW__strip {
+.StatsStrip-module__xodaVW__card:hover .StatsStrip-module__xodaVW__label {
+  color: #ffffffb3;
+}
+
+@media (max-width: 840px) {
+  .StatsStrip-module__xodaVW__grid {
     grid-template-columns: repeat(2, 1fr);
-    padding: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .StatsStrip-module__xodaVW__outer {
+    padding: 1.5rem 1rem;
   }
 
-  .StatsStrip-module__xodaVW__stat:nth-child(2) {
-    border-right: none;
+  .StatsStrip-module__xodaVW__grid {
+    gap: .75rem;
   }
 
-  .StatsStrip-module__xodaVW__stat:first-child, .StatsStrip-module__xodaVW__stat:nth-child(2) {
-    border-bottom: 1px solid #ffffff1a;
+  .StatsStrip-module__xodaVW__card {
+    padding: 1.5rem .75rem 1.35rem;
   }
 }
 

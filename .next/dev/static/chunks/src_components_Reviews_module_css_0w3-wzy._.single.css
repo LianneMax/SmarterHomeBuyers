@@ -11,34 +11,40 @@
 }
 
 .Reviews-module__yTtV6W__header {
-  text-align: center;
+  text-align: left;
+  flex-direction: column;
+  gap: 1.1rem;
+  max-width: 600px;
   margin-bottom: 56px;
+  display: flex;
 }
 
-.Reviews-module__yTtV6W__eyebrow {
-  letter-spacing: .18em;
+.Reviews-module__yTtV6W__tag {
+  letter-spacing: .16em;
   text-transform: uppercase;
-  color: var(--teal-dark);
-  margin-bottom: 12px;
-  font-size: .72rem;
+  color: var(--teal-mid);
+  border: 1.5px solid var(--teal-pale);
+  border-radius: 4px;
+  width: fit-content;
+  padding: .3rem .8rem;
+  font-size: .7rem;
   font-weight: 600;
-  display: block;
+  display: inline-block;
 }
 
 .Reviews-module__yTtV6W__heading {
   font-family: var(--font-display);
-  color: var(--teal-mid);
-  letter-spacing: -.01em;
-  margin-bottom: 12px;
-  font-size: clamp(1.7rem, 3.5vw, 2.4rem);
+  color: var(--text-dark);
+  letter-spacing: -.02em;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
   font-weight: 700;
+  line-height: 1.2;
 }
 
 .Reviews-module__yTtV6W__sub {
   color: var(--text-muted);
-  max-width: 560px;
-  margin: 0 auto;
-  font-size: 1.02rem;
+  max-width: 520px;
+  font-size: .95rem;
   line-height: 1.7;
 }
 
@@ -59,6 +65,7 @@
 
 .Reviews-module__yTtV6W__slide {
   flex-shrink: 0;
+  min-width: 0;
   padding: 0 8px;
 }
 
@@ -68,7 +75,8 @@
   border-radius: 16px;
   flex-direction: column;
   gap: 12px;
-  height: 260px;
+  min-width: 0;
+  min-height: 260px;
   padding: 24px 22px;
   transition: box-shadow .3s;
   display: flex;
@@ -93,25 +101,23 @@
 .Reviews-module__yTtV6W__quoteWrap {
   flex-direction: column;
   flex: 1;
-  justify-content: space-between;
+  gap: 8px;
   min-height: 0;
   display: flex;
-  overflow: hidden;
+  overflow: clip;
 }
 
 .Reviews-module__yTtV6W__quote {
   color: var(--text-dark);
   white-space: normal;
   word-break: break-word;
-  -webkit-line-clamp: 4;
-  line-clamp: 4;
-  -webkit-box-orient: vertical;
+  overflow-wrap: anywhere;
   margin: 0;
   font-size: .85rem;
   font-weight: 400;
   line-height: 1.6;
-  display: -webkit-box;
-  overflow: hidden;
+  display: block;
+  overflow: clip;
 }
 
 .Reviews-module__yTtV6W__seeMore {
@@ -124,6 +130,7 @@
   background: none;
   border: none;
   flex-shrink: 0;
+  align-self: flex-start;
   padding: 4px 0 0;
   transition: color .15s;
 }
@@ -273,7 +280,7 @@
   }
 
   .Reviews-module__yTtV6W__card {
-    height: 280px;
+    min-height: 280px;
     padding: 28px 20px;
   }
 

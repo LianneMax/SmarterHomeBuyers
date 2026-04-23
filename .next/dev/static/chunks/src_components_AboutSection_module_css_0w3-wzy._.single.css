@@ -68,6 +68,29 @@
   padding: 2.25rem 2rem;
   transition: background .2s, border-color .2s, box-shadow .2s;
   display: flex;
+  position: relative;
+}
+
+.AboutSection-module__UGBiha__cornerIcon {
+  background: var(--teal-pale);
+  width: 36px;
+  height: 36px;
+  color: var(--teal-light);
+  border-radius: 10px;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  transition: background .2s, color .2s, transform .2s;
+  display: flex;
+  position: absolute;
+  top: 1.4rem;
+  right: 1.4rem;
+}
+
+.AboutSection-module__UGBiha__card:hover .AboutSection-module__UGBiha__cornerIcon {
+  background: var(--teal-light);
+  color: var(--white);
+  transform: rotate(-8deg)scale(1.08);
 }
 
 .AboutSection-module__UGBiha__card:hover {

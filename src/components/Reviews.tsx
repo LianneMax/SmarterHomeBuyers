@@ -24,9 +24,6 @@ const INTERVAL_MS = 5000;
 type Review = typeof REVIEWS[number];
 
 function getPerPage() {
-  if (typeof window === "undefined") return 3;
-  if (window.innerWidth <= 700) return 1;
-  if (window.innerWidth <= 1100) return 2;
   return 3;
 }
 
@@ -104,7 +101,7 @@ export default function Reviews() {
       <section id="reviews" className={styles.section}>
         <div className={styles.container}>
           <div ref={headerRef} className={`${styles.header} reveal`}>
-            <span className={styles.eyebrow}>Client Reviews</span>
+            <div className={styles.tag}>Client Reviews</div>
             <h2 className={styles.heading}>What Homeowners Are Saying</h2>
             <p className={styles.sub}>Real results from real clients. Straight talk, no pressure, and savings that actually show up on your bank statement.</p>
           </div>
@@ -122,7 +119,11 @@ export default function Reviews() {
                   const isTruncated = r.text.length > CHAR_LIMIT;
                   const displayText = isTruncated ? r.text.slice(0, CHAR_LIMIT).trimEnd() + "…" : r.text;
                   return (
-                    <div key={`${r.id}-${i}`} className={styles.slide} style={{ minWidth: `${100 / perPage}%` }}>
+                    <div
+                      key={`${r.id}-${i}`}
+                      className={styles.slide}
+                      style={{ flex: `0 0 ${100 / perPage}%`, maxWidth: `${100 / perPage}%` }}
+                    >
                       <div className={styles.card}>
                         <div className={styles.stars} aria-label="5 out of 5 stars">
                           {STARS.split("").map((s, j) => <span key={j} className={styles.star}>{s}</span>)}

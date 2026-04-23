@@ -4,17 +4,13 @@
   left: 0;
   right: 0;
   z-index: 900;
-  background: rgba(247, 245, 242, 0.92);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(216, 232, 236, 0.65);
+  background: var(--sand);
+  border-bottom: 1px solid var(--border);
   box-shadow: 0 2px 14px rgba(30, 61, 74, 0.08);
-  transition: background 0.3s, border-color 0.3s, box-shadow 0.3s;
+  transition: box-shadow 0.3s;
 }
 
 .scrolled {
-  background: rgba(247, 245, 242, 0.98);
-  border-bottom-color: var(--border);
   box-shadow: 0 6px 20px rgba(30, 61, 74, 0.1);
 }
 

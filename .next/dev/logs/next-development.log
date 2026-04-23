@@ -1,3 +1,23 @@
-{"timestamp":"00:00:01.140","source":"Server","level":"LOG","message":""}
-{"timestamp":"00:00:01.882","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
-{"timestamp":"00:00:10.597","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"00:00:00.984","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:04.410","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"00:17:01.604","source":"Server","level":"LOG","message":"✓ Compiled in 23ms"}
+{"timestamp":"00:17:26.602","source":"Server","level":"LOG","message":"✓ Compiled in 13ms"}
+{"timestamp":"00:17:33.134","source":"Server","level":"LOG","message":"✓ Compiled in 9ms"}
+{"timestamp":"00:17:36.562","source":"Server","level":"LOG","message":"✓ Compiled in 5ms"}
+{"timestamp":"00:17:41.867","source":"Server","level":"LOG","message":"✓ Compiled in 5ms"}
+{"timestamp":"00:17:46.722","source":"Server","level":"LOG","message":"✓ Compiled in 15ms"}
+{"timestamp":"00:17:51.320","source":"Server","level":"LOG","message":"✓ Compiled in 13ms"}
+{"timestamp":"00:17:59.091","source":"Server","level":"LOG","message":"✓ Compiled in 16ms"}
+{"timestamp":"00:18:07.710","source":"Server","level":"LOG","message":"✓ Compiled in 10ms"}
+{"timestamp":"00:47:32.618","source":"Server","level":"LOG","message":"✓ Compiled in 8ms"}
+{"timestamp":"00:47:47.113","source":"Server","level":"LOG","message":"✓ Compiled in 9ms"}
+{"timestamp":"00:48:03.096","source":"Server","level":"LOG","message":"✓ Compiled in 7ms"}
+{"timestamp":"00:50:55.287","source":"Server","level":"LOG","message":"✓ Compiled in 7ms"}
+{"timestamp":"00:51:02.095","source":"Server","level":"LOG","message":"✓ Compiled in 5ms"}
+{"timestamp":"00:51:06.898","source":"Server","level":"LOG","message":"✓ Compiled in 6ms"}
+{"timestamp":"00:51:11.187","source":"Server","level":"LOG","message":"✓ Compiled in 5ms"}
+{"timestamp":"00:51:16.231","source":"Server","level":"LOG","message":"✓ Compiled in 9ms"}
+{"timestamp":"01:09:02.609","source":"Server","level":"LOG","message":"✓ Compiled in 76ms"}
+{"timestamp":"01:09:35.271","source":"Server","level":"LOG","message":"✓ Compiled in 28ms"}
+{"timestamp":"01:09:57.301","source":"Server","level":"LOG","message":"✓ Compiled in 16ms"}
+{"timestamp":"01:10:06.435","source":"Server","level":"LOG","message":"✓ Compiled in 14ms"}
