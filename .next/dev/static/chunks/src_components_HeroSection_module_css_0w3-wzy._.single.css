@@ -17,21 +17,6 @@
   overflow: hidden;
 }
 
-.HeroSection-module__sBkrQG__panelBg {
-  pointer-events: none;
-  background-image: radial-gradient(circle, #ffffff0e 1px, #0000 1px);
-  background-size: 28px 28px;
-  position: absolute;
-  inset: 0;
-}
-
-.HeroSection-module__sBkrQG__panelBg:before {
-  content: "";
-  background: radial-gradient(85% 65% at 50% 46%, #5b9ba833 0%, #0000 70%);
-  position: absolute;
-  inset: 0;
-}
-
 .HeroSection-module__sBkrQG__photoArea {
   z-index: 1;
   justify-content: center;
@@ -261,33 +246,47 @@
 
 @media (max-width: 480px) {
   .HeroSection-module__sBkrQG__panel {
-    min-height: 300px;
+    min-height: 280px;
     padding: 2rem 1rem;
   }
 
   .HeroSection-module__sBkrQG__photoArea {
-    max-width: 260px;
-    height: 220px;
+    max-width: 240px;
+    height: 200px;
   }
 
   .HeroSection-module__sBkrQG__photoWrap {
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
   }
 
   .HeroSection-module__sBkrQG__chip {
-    gap: .4rem;
-    padding: .4rem .55rem;
+    border-radius: 8px;
+    gap: .35rem;
+    padding: .35rem .5rem;
   }
 
   .HeroSection-module__sBkrQG__chipIconWrap {
-    width: 24px;
-    height: 24px;
+    border-radius: 6px;
+    width: 22px;
+    height: 22px;
+  }
+
+  .HeroSection-module__sBkrQG__chipVal {
+    font-size: .7rem;
+  }
+
+  .HeroSection-module__sBkrQG__chipLbl {
+    font-size: .56rem;
   }
 
   .HeroSection-module__sBkrQG__content {
-    gap: 1.5rem;
-    padding: 2.5rem 1.25rem;
+    gap: 1.4rem;
+    padding: 2.25rem 1.25rem;
+  }
+
+  .HeroSection-module__sBkrQG__headlineMain {
+    font-size: clamp(1.9rem, 8vw, 2.4rem);
   }
 
   .HeroSection-module__sBkrQG__buttons {
@@ -297,6 +296,13 @@
   :is(.HeroSection-module__sBkrQG__buttons .btn-primary, .HeroSection-module__sBkrQG__buttons .btn-outline) {
     text-align: center;
     justify-content: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 360px) {
+  .HeroSection-module__sBkrQG__chip {
+    display: none;
   }
 }
 

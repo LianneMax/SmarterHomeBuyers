@@ -8,11 +8,11 @@
   top: 0;
   left: 0;
   right: 0;
-  box-shadow: 0 2px 14px #1e3d4a14;
+  box-shadow: 0 2px 14px #00000014;
 }
 
 .Navbar-module__cJzEcG__scrolled {
-  box-shadow: 0 6px 20px #1e3d4a1a;
+  box-shadow: 0 6px 20px #0000001a;
 }
 
 .Navbar-module__cJzEcG__inner {
@@ -129,7 +129,7 @@
   font-size: .78rem;
   font-weight: 600;
   transition: background .15s, transform .15s;
-  box-shadow: 0 2px 10px #1e3d4a14;
+  box-shadow: 0 2px 10px #00000014;
 }
 
 .Navbar-module__cJzEcG__ctaBook:hover {
@@ -150,7 +150,7 @@
   font-size: .78rem;
   font-weight: 600;
   transition: background .15s, transform .15s;
-  box-shadow: 0 3px 12px #1e3d4a1f;
+  box-shadow: 0 3px 12px #0000001f;
 }
 
 .Navbar-module__cJzEcG__ctaApply:hover {

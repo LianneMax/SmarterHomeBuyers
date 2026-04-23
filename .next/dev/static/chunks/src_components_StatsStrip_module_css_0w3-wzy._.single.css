@@ -1,6 +1,7 @@
 /* [project]/src/components/StatsStrip.module.css [app-client] (css) */
 .StatsStrip-module__xodaVW__outer {
   background: var(--teal-dark);
+  margin-top: 1.5rem;
   padding: 2rem 1.5rem;
 }
 

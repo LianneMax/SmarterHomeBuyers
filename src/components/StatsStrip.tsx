@@ -9,7 +9,7 @@ const STATS = [
     value: 8,
     suffix: "",
     label: "States Licensed",
-    accent: "#5B9BA8",
+    accent: "#EC4899",
     icon: (
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
         <path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/>
@@ -32,7 +32,7 @@ const STATS = [
     value: 100,
     suffix: "%",
     label: "Honest Guidance",
-    accent: "#34D399",
+    accent: "#22C55E",
     icon: (
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
         <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
@@ -44,7 +44,7 @@ const STATS = [
     value: 15,
     suffix: "min",
     label: "Free Discovery Call",
-    accent: "#818CF8",
+    accent: "#3B82F6",
     icon: (
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
         <circle cx="12" cy="12" r="10"/>

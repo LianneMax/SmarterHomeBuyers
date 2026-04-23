@@ -2,12 +2,12 @@ import Image from "next/image";
 import styles from "./Footer.module.css";
 
 const FOOTER_LINKS = [
-  { label: "Privacy Policy",            href: "https://www.realdarrentsai.com/privacy-policy" },
+  { label: "Privacy Policy",            href: "https://www.saxtonmortgage.com/privacy-policy" },
   { label: "Check my license at NMLS Consumer Access", href: "https://www.nmlsconsumeraccess.org/EntityDetails.aspx/INDIVIDUAL/2438102" },
-  { label: "Legal",                     href: "https://www.realdarrentsai.com/disclosures-licenses" },
-  { label: "Terms of Use",              href: "https://www.realdarrentsai.com/terms-of-use" },
-  { label: "Accessibility",             href: "https://www.realdarrentsai.com/accessibility" },
-  { label: "Site Map",                  href: "https://www.realdarrentsai.com/site-map" },
+  { label: "Legal",                     href: "https://www.saxtonmortgage.com/legal" },
+  { label: "Terms of Use",              href: "https://www.saxtonmortgage.com/terms-of-use" },
+  { label: "Accessibility",             href: "https://www.saxtonmortgage.com/accessibility-statement" },
+  { label: "Site Map",                  href: "https://www.saxtonmortgage.com/site-map" },
 ];
 
 export default function Footer() {

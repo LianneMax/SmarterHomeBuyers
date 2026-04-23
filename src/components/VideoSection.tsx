@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
+import PlaylistFlipCard from "./kokonutui/playlist-flip-card";
 import styles from "./VideoSection.module.css";
 
 const FEATURED = {
@@ -169,28 +170,15 @@ export default function VideoSection() {
           </div>
           <div className={styles.playlistsGrid}>
             {PLAYLISTS.map((p) => (
-              <a
+              <PlaylistFlipCard
                 key={p.title}
-                href={p.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.playlistCard}
-              >
-                <div className={styles.playlistBanner} style={{ background: p.gradient }}>
-                  <span className={styles.playlistIcon}>{p.icon}</span>
-                  <span className={styles.playlistBadge}>{p.badge}</span>
-                </div>
-                <div className={styles.playlistBody}>
-                  <p className={styles.playlistTitle}>{p.title}</p>
-                  <p className={styles.playlistDesc}>{p.description}</p>
-                  <span className={styles.playlistCta}>
-                    Watch Playlist
-                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M5 12h14M12 5l7 7-7 7"/>
-                    </svg>
-                  </span>
-                </div>
-              </a>
+                title={p.title}
+                description={p.description}
+                badge={p.badge}
+                gradient={p.gradient}
+                url={p.url}
+                icon={p.icon}
+              />
             ))}
           </div>
         </div>

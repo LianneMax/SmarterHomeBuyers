@@ -2,29 +2,6 @@
 "[project]/src/components/Navbar.module.css [app-client] (css module)", ((__turbopack_context__) => {
 
 __turbopack_context__.v({
-  "avatar": "Navbar-module__cJzEcG__avatar",
-  "avatarFallback": "Navbar-module__cJzEcG__avatarFallback",
-  "avatarImg": "Navbar-module__cJzEcG__avatarImg",
-  "bar": "Navbar-module__cJzEcG__bar",
-  "barBot": "Navbar-module__cJzEcG__barBot",
-  "barMid": "Navbar-module__cJzEcG__barMid",
-  "barTop": "Navbar-module__cJzEcG__barTop",
-  "brand": "Navbar-module__cJzEcG__brand",
-  "brandName": "Navbar-module__cJzEcG__brandName",
-  "brandSub": "Navbar-module__cJzEcG__brandSub",
-  "brandText": "Navbar-module__cJzEcG__brandText",
-  "ctaApply": "Navbar-module__cJzEcG__ctaApply",
-  "ctaBook": "Navbar-module__cJzEcG__ctaBook",
-  "ctas": "Navbar-module__cJzEcG__ctas",
-  "hamburger": "Navbar-module__cJzEcG__hamburger",
-  "inner": "Navbar-module__cJzEcG__inner",
-  "link": "Navbar-module__cJzEcG__link",
-  "links": "Navbar-module__cJzEcG__links",
-  "mobileCtas": "Navbar-module__cJzEcG__mobileCtas",
-  "mobileLink": "Navbar-module__cJzEcG__mobileLink",
-  "mobileMenu": "Navbar-module__cJzEcG__mobileMenu",
-  "nav": "Navbar-module__cJzEcG__nav",
-  "scrolled": "Navbar-module__cJzEcG__scrolled",
 });
 }),
 "[project]/src/components/Navbar.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
@@ -430,13 +407,6 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 "[project]/src/components/ApplyModal.module.css [app-client] (css module)", ((__turbopack_context__) => {
 
 __turbopack_context__.v({
-  "actions": "ApplyModal-module__rf3tKW__actions",
-  "badge": "ApplyModal-module__rf3tKW__badge",
-  "body": "ApplyModal-module__rf3tKW__body",
-  "cancel": "ApplyModal-module__rf3tKW__cancel",
-  "checklist": "ApplyModal-module__rf3tKW__checklist",
-  "container": "ApplyModal-module__rf3tKW__container",
-  "title": "ApplyModal-module__rf3tKW__title",
 });
 }),
 "[project]/src/components/ApplyModal.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
@@ -566,11 +536,6 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 "[project]/src/components/BookModal.module.css [app-client] (css module)", ((__turbopack_context__) => {
 
 __turbopack_context__.v({
-  "badge": "BookModal-module__Qffdra__badge",
-  "container": "BookModal-module__Qffdra__container",
-  "header": "BookModal-module__Qffdra__header",
-  "subtitle": "BookModal-module__Qffdra__subtitle",
-  "title": "BookModal-module__Qffdra__title",
 });
 }),
 "[project]/src/components/BookModal.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
@@ -678,34 +643,6 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 "[project]/src/components/HeroSection.module.css [app-client] (css module)", ((__turbopack_context__) => {
 
 __turbopack_context__.v({
-  "buttons": "HeroSection-module__sBkrQG__buttons",
-  "chip": "HeroSection-module__sBkrQG__chip",
-  "chipClose": "HeroSection-module__sBkrQG__chipClose",
-  "chipIconWrap": "HeroSection-module__sBkrQG__chipIconWrap",
-  "chipLbl": "HeroSection-module__sBkrQG__chipLbl",
-  "chipRating": "HeroSection-module__sBkrQG__chipRating",
-  "chipStates": "HeroSection-module__sBkrQG__chipStates",
-  "chipVal": "HeroSection-module__sBkrQG__chipVal",
-  "content": "HeroSection-module__sBkrQG__content",
-  "credRow": "HeroSection-module__sBkrQG__credRow",
-  "credTag": "HeroSection-module__sBkrQG__credTag",
-  "credentials": "HeroSection-module__sBkrQG__credentials",
-  "divider": "HeroSection-module__sBkrQG__divider",
-  "eyebrow": "HeroSection-module__sBkrQG__eyebrow",
-  "eyebrowLine": "HeroSection-module__sBkrQG__eyebrowLine",
-  "eyebrowText": "HeroSection-module__sBkrQG__eyebrowText",
-  "headline": "HeroSection-module__sBkrQG__headline",
-  "headlineMain": "HeroSection-module__sBkrQG__headlineMain",
-  "headlineSub": "HeroSection-module__sBkrQG__headlineSub",
-  "nameBlock": "HeroSection-module__sBkrQG__nameBlock",
-  "panel": "HeroSection-module__sBkrQG__panel",
-  "panelBg": "HeroSection-module__sBkrQG__panelBg",
-  "panelLabel": "HeroSection-module__sBkrQG__panelLabel",
-  "panelName": "HeroSection-module__sBkrQG__panelName",
-  "photo": "HeroSection-module__sBkrQG__photo",
-  "photoArea": "HeroSection-module__sBkrQG__photoArea",
-  "photoWrap": "HeroSection-module__sBkrQG__photoWrap",
-  "section": "HeroSection-module__sBkrQG__section",
 });
 }),
 "[project]/src/components/HeroSection.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
@@ -1348,12 +1285,6 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 "[project]/src/components/StatsStrip.module.css [app-client] (css module)", ((__turbopack_context__) => {
 
 __turbopack_context__.v({
-  "card": "StatsStrip-module__xodaVW__card",
-  "grid": "StatsStrip-module__xodaVW__grid",
-  "iconWrap": "StatsStrip-module__xodaVW__iconWrap",
-  "label": "StatsStrip-module__xodaVW__label",
-  "outer": "StatsStrip-module__xodaVW__outer",
-  "value": "StatsStrip-module__xodaVW__value",
 });
 }),
 "[project]/src/components/StatsStrip.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
@@ -1668,18 +1599,6 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 "[project]/src/components/AboutSection.module.css [app-client] (css module)", ((__turbopack_context__) => {
 
 __turbopack_context__.v({
-  "card": "AboutSection-module__UGBiha__card",
-  "cardBody": "AboutSection-module__UGBiha__cardBody",
-  "cardTitle": "AboutSection-module__UGBiha__cardTitle",
-  "container": "AboutSection-module__UGBiha__container",
-  "cornerIcon": "AboutSection-module__UGBiha__cornerIcon",
-  "grid": "AboutSection-module__UGBiha__grid",
-  "header": "AboutSection-module__UGBiha__header",
-  "heading": "AboutSection-module__UGBiha__heading",
-  "num": "AboutSection-module__UGBiha__num",
-  "section": "AboutSection-module__UGBiha__section",
-  "sub": "AboutSection-module__UGBiha__sub",
-  "tag": "AboutSection-module__UGBiha__tag",
 });
 }),
 "[project]/src/components/AboutSection.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
@@ -2091,36 +2010,6 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 "[project]/src/components/Reviews.module.css [app-client] (css module)", ((__turbopack_context__) => {
 
 __turbopack_context__.v({
-  "author": "Reviews-module__yTtV6W__author",
-  "avatar": "Reviews-module__yTtV6W__avatar",
-  "card": "Reviews-module__yTtV6W__card",
-  "carousel": "Reviews-module__yTtV6W__carousel",
-  "container": "Reviews-module__yTtV6W__container",
-  "dot": "Reviews-module__yTtV6W__dot",
-  "dotActive": "Reviews-module__yTtV6W__dotActive",
-  "dots": "Reviews-module__yTtV6W__dots",
-  "fadeIn": "Reviews-module__yTtV6W__fadeIn",
-  "header": "Reviews-module__yTtV6W__header",
-  "heading": "Reviews-module__yTtV6W__heading",
-  "meta": "Reviews-module__yTtV6W__meta",
-  "modal": "Reviews-module__yTtV6W__modal",
-  "modalClose": "Reviews-module__yTtV6W__modalClose",
-  "modalOverlay": "Reviews-module__yTtV6W__modalOverlay",
-  "modalQuote": "Reviews-module__yTtV6W__modalQuote",
-  "name": "Reviews-module__yTtV6W__name",
-  "nav": "Reviews-module__yTtV6W__nav",
-  "navBtn": "Reviews-module__yTtV6W__navBtn",
-  "quote": "Reviews-module__yTtV6W__quote",
-  "quoteWrap": "Reviews-module__yTtV6W__quoteWrap",
-  "section": "Reviews-module__yTtV6W__section",
-  "seeMore": "Reviews-module__yTtV6W__seeMore",
-  "slide": "Reviews-module__yTtV6W__slide",
-  "slideUp": "Reviews-module__yTtV6W__slideUp",
-  "star": "Reviews-module__yTtV6W__star",
-  "stars": "Reviews-module__yTtV6W__stars",
-  "sub": "Reviews-module__yTtV6W__sub",
-  "tag": "Reviews-module__yTtV6W__tag",
-  "track": "Reviews-module__yTtV6W__track",
 });
 }),
 "[project]/src/components/Reviews.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
@@ -2771,40 +2660,6 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 "[project]/src/components/VideoSection.module.css [app-client] (css module)", ((__turbopack_context__) => {
 
 __turbopack_context__.v({
-  "card": "VideoSection-module__9_92RW__card",
-  "channelBtn": "VideoSection-module__9_92RW__channelBtn",
-  "grid": "VideoSection-module__9_92RW__grid",
-  "header": "VideoSection-module__9_92RW__header",
-  "headerRow": "VideoSection-module__9_92RW__headerRow",
-  "heading": "VideoSection-module__9_92RW__heading",
-  "iframe": "VideoSection-module__9_92RW__iframe",
-  "inner": "VideoSection-module__9_92RW__inner",
-  "label": "VideoSection-module__9_92RW__label",
-  "large": "VideoSection-module__9_92RW__large",
-  "overlay": "VideoSection-module__9_92RW__overlay",
-  "play": "VideoSection-module__9_92RW__play",
-  "playlistBadge": "VideoSection-module__9_92RW__playlistBadge",
-  "playlistBanner": "VideoSection-module__9_92RW__playlistBanner",
-  "playlistBody": "VideoSection-module__9_92RW__playlistBody",
-  "playlistCard": "VideoSection-module__9_92RW__playlistCard",
-  "playlistCta": "VideoSection-module__9_92RW__playlistCta",
-  "playlistDesc": "VideoSection-module__9_92RW__playlistDesc",
-  "playlistIcon": "VideoSection-module__9_92RW__playlistIcon",
-  "playlistTitle": "VideoSection-module__9_92RW__playlistTitle",
-  "playlistsGrid": "VideoSection-module__9_92RW__playlistsGrid",
-  "playlistsHeader": "VideoSection-module__9_92RW__playlistsHeader",
-  "playlistsSection": "VideoSection-module__9_92RW__playlistsSection",
-  "playlistsSub": "VideoSection-module__9_92RW__playlistsSub",
-  "playlistsTitle": "VideoSection-module__9_92RW__playlistsTitle",
-  "section": "VideoSection-module__9_92RW__section",
-  "sub": "VideoSection-module__9_92RW__sub",
-  "tag": "VideoSection-module__9_92RW__tag",
-  "thumb": "VideoSection-module__9_92RW__thumb",
-  "thumbImg": "VideoSection-module__9_92RW__thumbImg",
-  "thumbTitle": "VideoSection-module__9_92RW__thumbTitle",
-  "ytDot": "VideoSection-module__9_92RW__ytDot",
-  "ytLink": "VideoSection-module__9_92RW__ytLink",
-  "ytPulse": "VideoSection-module__9_92RW__ytPulse",
 });
 }),
 "[project]/src/components/VideoSection.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
@@ -2866,20 +2721,20 @@ const PLAYLISTS = [
                     points: "22 7 13.5 15.5 8.5 10.5 2 17"
                 }, void 0, false, {
                     fileName: "[project]/src/components/VideoSection.tsx",
-                    lineNumber: 29,
+                    lineNumber: 30,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("polyline", {
                     points: "16 7 22 7 22 13"
                 }, void 0, false, {
                     fileName: "[project]/src/components/VideoSection.tsx",
-                    lineNumber: 30,
+                    lineNumber: 31,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0))
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/VideoSection.tsx",
-            lineNumber: 28,
+            lineNumber: 29,
             columnNumber: 7
         }, ("TURBOPACK compile-time value", void 0))
     },
@@ -2903,20 +2758,20 @@ const PLAYLISTS = [
                     d: "M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
                 }, void 0, false, {
                     fileName: "[project]/src/components/VideoSection.tsx",
-                    lineNumber: 42,
+                    lineNumber: 43,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("polyline", {
                     points: "9 22 9 12 15 12 15 22"
                 }, void 0, false, {
                     fileName: "[project]/src/components/VideoSection.tsx",
-                    lineNumber: 43,
+                    lineNumber: 44,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0))
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/VideoSection.tsx",
-            lineNumber: 41,
+            lineNumber: 42,
             columnNumber: 7
         }, ("TURBOPACK compile-time value", void 0))
     },
@@ -2939,12 +2794,12 @@ const PLAYLISTS = [
                 d: "M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"
             }, void 0, false, {
                 fileName: "[project]/src/components/VideoSection.tsx",
-                lineNumber: 55,
+                lineNumber: 56,
                 columnNumber: 9
             }, ("TURBOPACK compile-time value", void 0))
         }, void 0, false, {
             fileName: "[project]/src/components/VideoSection.tsx",
-            lineNumber: 54,
+            lineNumber: 55,
             columnNumber: 7
         }, ("TURBOPACK compile-time value", void 0))
     }
@@ -2962,7 +2817,7 @@ function VideoCard({ id, title, label, large = false }) {
             allowFullScreen: true
         }, void 0, false, {
             fileName: "[project]/src/components/VideoSection.tsx",
-            lineNumber: 77,
+            lineNumber: 78,
             columnNumber: 9
         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
             className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$VideoSection$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].thumb,
@@ -2977,7 +2832,7 @@ function VideoCard({ id, title, label, large = false }) {
                     className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$VideoSection$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].thumbImg
                 }, void 0, false, {
                     fileName: "[project]/src/components/VideoSection.tsx",
-                    lineNumber: 90,
+                    lineNumber: 91,
                     columnNumber: 11
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2988,7 +2843,7 @@ function VideoCard({ id, title, label, large = false }) {
                             children: label
                         }, void 0, false, {
                             fileName: "[project]/src/components/VideoSection.tsx",
-                            lineNumber: 102,
+                            lineNumber: 103,
                             columnNumber: 23
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3002,17 +2857,17 @@ function VideoCard({ id, title, label, large = false }) {
                                     points: "5 3 19 12 5 21 5 3"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/VideoSection.tsx",
-                                    lineNumber: 105,
+                                    lineNumber: 106,
                                     columnNumber: 17
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/VideoSection.tsx",
-                                lineNumber: 104,
+                                lineNumber: 105,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/VideoSection.tsx",
-                            lineNumber: 103,
+                            lineNumber: 104,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3020,13 +2875,13 @@ function VideoCard({ id, title, label, large = false }) {
                             children: title
                         }, void 0, false, {
                             fileName: "[project]/src/components/VideoSection.tsx",
-                            lineNumber: 108,
+                            lineNumber: 109,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/VideoSection.tsx",
-                    lineNumber: 101,
+                    lineNumber: 102,
                     columnNumber: 11
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -3038,18 +2893,18 @@ function VideoCard({ id, title, label, large = false }) {
                     children: "Watch on YouTube ↗"
                 }, void 0, false, {
                     fileName: "[project]/src/components/VideoSection.tsx",
-                    lineNumber: 110,
+                    lineNumber: 111,
                     columnNumber: 11
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/VideoSection.tsx",
-            lineNumber: 85,
+            lineNumber: 86,
             columnNumber: 9
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/VideoSection.tsx",
-        lineNumber: 75,
+        lineNumber: 76,
         columnNumber: 5
     }, this);
 }
@@ -3074,7 +2929,7 @@ function VideoSection() {
                             children: "Free Education"
                         }, void 0, false, {
                             fileName: "[project]/src/components/VideoSection.tsx",
-                            lineNumber: 134,
+                            lineNumber: 135,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -3082,7 +2937,7 @@ function VideoSection() {
                             children: "Yes, you can buy a house."
                         }, void 0, false, {
                             fileName: "[project]/src/components/VideoSection.tsx",
-                            lineNumber: 135,
+                            lineNumber: 136,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3093,7 +2948,7 @@ function VideoSection() {
                                     children: "Darren breaks down the whole process — free, on YouTube, no fluff."
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/VideoSection.tsx",
-                                    lineNumber: 137,
+                                    lineNumber: 138,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -3107,7 +2962,7 @@ function VideoSection() {
                                             "aria-hidden": "true"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/VideoSection.tsx",
-                                            lineNumber: 146,
+                                            lineNumber: 147,
                                             columnNumber: 15
                                         }, this),
                                         "Visit the Channel",
@@ -3124,30 +2979,30 @@ function VideoSection() {
                                                 d: "M5 12h14M12 5l7 7-7 7"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/VideoSection.tsx",
-                                                lineNumber: 149,
+                                                lineNumber: 150,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/VideoSection.tsx",
-                                            lineNumber: 148,
+                                            lineNumber: 149,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/VideoSection.tsx",
-                                    lineNumber: 140,
+                                    lineNumber: 141,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/VideoSection.tsx",
-                            lineNumber: 136,
+                            lineNumber: 137,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/VideoSection.tsx",
-                    lineNumber: 133,
+                    lineNumber: 134,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3161,7 +3016,7 @@ function VideoSection() {
                             large: true
                         }, void 0, false, {
                             fileName: "[project]/src/components/VideoSection.tsx",
-                            lineNumber: 156,
+                            lineNumber: 157,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3171,18 +3026,18 @@ function VideoSection() {
                                     title: v.title
                                 }, v.id, false, {
                                     fileName: "[project]/src/components/VideoSection.tsx",
-                                    lineNumber: 159,
+                                    lineNumber: 160,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/src/components/VideoSection.tsx",
-                            lineNumber: 157,
+                            lineNumber: 158,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/VideoSection.tsx",
-                    lineNumber: 155,
+                    lineNumber: 156,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3197,7 +3052,7 @@ function VideoSection() {
                                     children: "Browse the Series"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/VideoSection.tsx",
-                                    lineNumber: 167,
+                                    lineNumber: 168,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3205,13 +3060,13 @@ function VideoSection() {
                                     children: "Structured playlists for wherever you are in the journey."
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/VideoSection.tsx",
-                                    lineNumber: 168,
+                                    lineNumber: 169,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/VideoSection.tsx",
-                            lineNumber: 166,
+                            lineNumber: 167,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3233,7 +3088,7 @@ function VideoSection() {
                                                     children: p.icon
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/VideoSection.tsx",
-                                                    lineNumber: 180,
+                                                    lineNumber: 181,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3241,13 +3096,13 @@ function VideoSection() {
                                                     children: p.badge
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/VideoSection.tsx",
-                                                    lineNumber: 181,
+                                                    lineNumber: 182,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/VideoSection.tsx",
-                                            lineNumber: 179,
+                                            lineNumber: 180,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3258,7 +3113,7 @@ function VideoSection() {
                                                     children: p.title
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/VideoSection.tsx",
-                                                    lineNumber: 184,
+                                                    lineNumber: 185,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3266,7 +3121,7 @@ function VideoSection() {
                                                     children: p.description
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/VideoSection.tsx",
-                                                    lineNumber: 185,
+                                                    lineNumber: 186,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3286,52 +3141,52 @@ function VideoSection() {
                                                                 d: "M5 12h14M12 5l7 7-7 7"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/VideoSection.tsx",
-                                                                lineNumber: 189,
+                                                                lineNumber: 190,
                                                                 columnNumber: 23
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/VideoSection.tsx",
-                                                            lineNumber: 188,
+                                                            lineNumber: 189,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/VideoSection.tsx",
-                                                    lineNumber: 186,
+                                                    lineNumber: 187,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/VideoSection.tsx",
-                                            lineNumber: 183,
+                                            lineNumber: 184,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, p.title, true, {
                                     fileName: "[project]/src/components/VideoSection.tsx",
-                                    lineNumber: 172,
+                                    lineNumber: 173,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/src/components/VideoSection.tsx",
-                            lineNumber: 170,
+                            lineNumber: 171,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/VideoSection.tsx",
-                    lineNumber: 165,
+                    lineNumber: 166,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/VideoSection.tsx",
-            lineNumber: 132,
+            lineNumber: 133,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/VideoSection.tsx",
-        lineNumber: 131,
+        lineNumber: 132,
         columnNumber: 5
     }, this);
 }

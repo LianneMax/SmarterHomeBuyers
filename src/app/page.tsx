@@ -18,11 +18,11 @@ export default function Home() {
         <section id="about" style={{ scrollMarginTop: "74px" }}>
           <AboutSection />
         </section>
-        <section id="reviews" style={{ scrollMarginTop: "74px" }}>
-          <Reviews />
-        </section>
         <section id="education" style={{ scrollMarginTop: "74px" }}>
           <VideoSection />
+        </section>
+        <section id="reviews" style={{ scrollMarginTop: "74px" }}>
+          <Reviews />
         </section>
         <Footer />
       </main>

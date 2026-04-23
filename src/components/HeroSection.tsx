@@ -4,17 +4,24 @@ import { useState } from "react";
 import Image from "next/image";
 import ApplyModal from "./ApplyModal";
 import BookModal from "./BookModal";
+import HeroDotBg, { useHeroDotHandlers } from "./HeroDotBg";
 import styles from "./HeroSection.module.css";
 
 export default function HeroSection() {
   const [showApply, setShowApply] = useState(false);
   const [showBook, setShowBook] = useState(false);
+  const { containerRef, mouseX, mouseY, handleMouseMove, handleMouseLeave } = useHeroDotHandlers();
 
   return (
     <section className={styles.section}>
       {/* Left — dynamic photo panel */}
-      <div className={styles.panel}>
-        <div className={styles.panelBg} aria-hidden="true" />
+      <div
+        ref={containerRef}
+        className={styles.panel}
+        onMouseMove={handleMouseMove}
+        onMouseLeave={handleMouseLeave}
+      >
+        <HeroDotBg containerRef={containerRef} mouseX={mouseX} mouseY={mouseY} />
 
         <div className={styles.photoArea}>
           {/* Floating stat badges */}
@@ -70,7 +77,7 @@ export default function HeroSection() {
         </div>
 
         <div className={styles.nameBlock}>
-          <p className={styles.panelLabel}>Senior Loan Consultant · Saxton Mortgage</p>
+          <p className={styles.panelLabel}>Senior Loan Officer · Saxton Mortgage</p>
           <h2 className={styles.panelName}>Darren Tsai</h2>
         </div>
       </div>

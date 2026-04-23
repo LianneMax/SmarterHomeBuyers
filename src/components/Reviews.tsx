@@ -24,6 +24,9 @@ const INTERVAL_MS = 5000;
 type Review = typeof REVIEWS[number];
 
 function getPerPage() {
+  if (typeof window === "undefined") return 3;
+  if (window.innerWidth < 600) return 1;
+  if (window.innerWidth < 960) return 2;
   return 3;
 }
 
