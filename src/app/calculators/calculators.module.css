@@ -1,0 +1,309 @@
+.page {
+  min-height: 100svh;
+  background: var(--sand);
+  padding: 5rem 1.5rem 4rem;
+}
+
+.pageInner {
+  max-width: 1040px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* ── Header ── */
+.pageHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.15s;
+  width: fit-content;
+}
+.back:hover { color: var(--teal-dark); }
+
+.tag {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--teal-mid);
+  padding: 0.25rem 0.7rem;
+  border: 1.5px solid var(--teal-pale);
+  border-radius: 4px;
+  width: fit-content;
+}
+
+.pageTitle {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 800;
+  color: var(--text-dark);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.pageSub {
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+  max-width: 520px;
+}
+
+/* ── Grid ── */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
+  gap: 1.25rem;
+}
+
+/* ── Calculator card ── */
+.calcCard {
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: 16px;
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.calcHeader {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+}
+
+.calcIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.calcTitle {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  line-height: 1.2;
+}
+
+.calcSub {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 0.2rem;
+}
+
+/* ── Fields ── */
+.fields {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.row2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.field label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.inputWrap {
+  display: flex;
+  align-items: center;
+  border: 1.5px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--white);
+  transition: border-color 0.15s;
+}
+
+.inputWrap:focus-within {
+  border-color: var(--teal-light);
+}
+
+.inputWrap input,
+.inputWrap select {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 0.55rem 0.65rem;
+  font-size: 0.88rem;
+  font-family: var(--font-body);
+  color: var(--text-dark);
+  background: transparent;
+}
+
+.field select {
+  width: 100%;
+  border: 1.5px solid var(--border);
+  border-radius: 8px;
+  padding: 0.55rem 0.65rem;
+  font-size: 0.88rem;
+  font-family: var(--font-body);
+  color: var(--text-dark);
+  background: var(--white);
+  outline: none;
+  cursor: pointer;
+}
+
+.prefix {
+  padding: 0 0 0 0.65rem;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+
+.suffix {
+  padding: 0 0.65rem 0 0;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+
+/* ── Result ── */
+.result {
+  background: var(--teal-mist);
+  border: 1.5px solid var(--teal-pale);
+  border-radius: 12px;
+  padding: 1rem 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.resultRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  color: var(--text-body);
+}
+
+.resultRow strong {
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.resultTotal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--border);
+  padding-top: 0.55rem;
+  margin-top: 0.2rem;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.resultTotal strong {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--teal-dark);
+  letter-spacing: -0.02em;
+}
+
+.disclaimer {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+}
+
+/* ── CTA ── */
+.cta {
+  background: var(--teal-dark);
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.ctaText {
+  font-family: var(--font-display);
+  font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+  font-weight: 700;
+  color: var(--white);
+  letter-spacing: -0.01em;
+}
+
+.ctaBtns {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.ctaPrimary {
+  padding: 0.8rem 1.75rem;
+  background: var(--white);
+  color: var(--teal-dark);
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.15s;
+}
+.ctaPrimary:hover { background: var(--teal-mist); transform: translateY(-2px); }
+
+.ctaOutline {
+  padding: 0.8rem 1.75rem;
+  background: transparent;
+  color: var(--white);
+  border: 1.5px solid rgba(255,255,255,0.35);
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background 0.2s, border-color 0.2s, transform 0.15s;
+}
+.ctaOutline:hover { background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.6); transform: translateY(-2px); }
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .page { padding: 4rem 1.25rem 3rem; }
+  .grid { grid-template-columns: 1fr; }
+  .row2 { grid-template-columns: 1fr; }
+  .cta { flex-direction: column; align-items: flex-start; }
+}
+
+@media (max-width: 480px) {
+  .page { padding: 3.5rem 1rem 2.5rem; }
+  .calcCard { padding: 1.25rem; }
+  .ctaBtns { flex-direction: column; width: 100%; }
+  .ctaPrimary, .ctaOutline { text-align: center; }
+}

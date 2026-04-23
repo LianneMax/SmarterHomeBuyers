@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
+import StartupDrawer from "@/components/StartupDrawer";
 import StatsStrip from "@/components/StatsStrip";
 import AboutSection from "@/components/AboutSection";
 import Reviews from "@/components/Reviews";
@@ -10,6 +11,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
+      <StartupDrawer />
       <main>
         <section id="home">
           <HeroSection />
