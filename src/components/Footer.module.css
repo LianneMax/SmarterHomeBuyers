@@ -190,6 +190,10 @@
 
 /* ── Responsive ───────────────────────────────── */
 @media (max-width: 768px) {
+  .footer {
+    padding: 2.5rem 1.25rem 1.5rem;
+  }
+
   .main {
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -206,5 +210,24 @@
 
   .disclaimer {
     text-align: left;
+    max-width: 100%;
+  }
+
+  .legalLinks {
+    gap: 0.5rem 0.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 2rem 1rem 1.25rem;
+  }
+
+  .name {
+    font-size: 0.95rem;
+  }
+
+  .disclosures {
+    font-size: 0.78rem;
   }
 }

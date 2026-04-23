@@ -355,13 +355,17 @@
 /* ── Responsive ──────────────────────────────── */
 @media (max-width: 840px) {
   .playlistsGrid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .heading {
+    font-size: clamp(1.5rem, 5vw, 2.2rem);
   }
 }
 
 @media (max-width: 640px) {
   .section {
-    padding: 4rem 1.25rem;
+    padding: 3.5rem 1.25rem;
   }
 
   .grid {
@@ -371,9 +375,29 @@
   .headerRow {
     flex-direction: column;
     align-items: flex-start;
+    gap: 1.25rem;
+  }
+
+  .channelBtn {
+    width: 100%;
+    justify-content: center;
   }
 
   .playlistsGrid {
     grid-template-columns: 1fr;
+  }
+
+  .playlistsSection {
+    padding-top: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 3rem 1rem;
+  }
+
+  .inner {
+    gap: 1rem;
   }
 }

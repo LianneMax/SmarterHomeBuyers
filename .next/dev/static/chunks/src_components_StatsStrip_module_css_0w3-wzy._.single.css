@@ -110,7 +110,8 @@
 
 @media (max-width: 480px) {
   .StatsStrip-module__xodaVW__outer {
-    padding: 1.5rem 1rem;
+    margin-top: 1rem;
+    padding: 2rem 1rem;
   }
 
   .StatsStrip-module__xodaVW__grid {
@@ -118,7 +119,17 @@
   }
 
   .StatsStrip-module__xodaVW__card {
-    padding: 1.5rem .75rem 1.35rem;
+    padding: 1.5rem .75rem 1.25rem;
+  }
+
+  .StatsStrip-module__xodaVW__value {
+    font-size: clamp(1.5rem, 7vw, 2rem);
+  }
+
+  .StatsStrip-module__xodaVW__iconWrap {
+    border-radius: 10px;
+    width: 36px;
+    height: 36px;
   }
 }
 

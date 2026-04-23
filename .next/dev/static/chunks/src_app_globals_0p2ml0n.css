@@ -208,6 +208,11 @@
   border-top-width: 1px;
 }
 
+.border-r {
+  border-right-style: var(--tw-border-style);
+  border-right-width: 1px;
+}
+
 .bg-gradient-to-b {
   --tw-gradient-position: to bottom in oklab;
   background-image: linear-gradient(var(--tw-gradient-stops));
@@ -310,6 +315,11 @@
   transition-delay: 50ms;
 }
 
+.duration-200 {
+  --tw-duration: .2s;
+  transition-duration: .2s;
+}
+
 .duration-300 {
   --tw-duration: .3s;
   transition-duration: .3s;
@@ -327,6 +337,11 @@
 
 .will-change-transform {
   will-change: transform;
+}
+
+.outline-none {
+  --tw-outline-style: none;
+  outline-style: none;
 }
 
 .\[backface-visibility\:hidden\] {
@@ -398,6 +413,11 @@
   .group-hover\/start\:opacity-100:is(:where(.group\/start):hover *) {
     opacity: 1;
   }
+}
+
+.last\:border-r-0:last-child {
+  border-right-style: var(--tw-border-style);
+  border-right-width: 0;
 }
 
 @media (hover: hover) {

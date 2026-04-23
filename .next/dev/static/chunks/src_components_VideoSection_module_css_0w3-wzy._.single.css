@@ -357,13 +357,17 @@
 
 @media (max-width: 840px) {
   .VideoSection-module__9_92RW__playlistsGrid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .VideoSection-module__9_92RW__heading {
+    font-size: clamp(1.5rem, 5vw, 2.2rem);
   }
 }
 
 @media (max-width: 640px) {
   .VideoSection-module__9_92RW__section {
-    padding: 4rem 1.25rem;
+    padding: 3.5rem 1.25rem;
   }
 
   .VideoSection-module__9_92RW__grid {
@@ -373,10 +377,30 @@
   .VideoSection-module__9_92RW__headerRow {
     flex-direction: column;
     align-items: flex-start;
+    gap: 1.25rem;
+  }
+
+  .VideoSection-module__9_92RW__channelBtn {
+    justify-content: center;
+    width: 100%;
   }
 
   .VideoSection-module__9_92RW__playlistsGrid {
     grid-template-columns: 1fr;
+  }
+
+  .VideoSection-module__9_92RW__playlistsSection {
+    padding-top: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .VideoSection-module__9_92RW__section {
+    padding: 3rem 1rem;
+  }
+
+  .VideoSection-module__9_92RW__inner {
+    gap: 1rem;
   }
 }
 

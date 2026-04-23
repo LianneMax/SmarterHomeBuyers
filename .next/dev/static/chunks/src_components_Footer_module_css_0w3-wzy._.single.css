@@ -184,6 +184,10 @@
 }
 
 @media (max-width: 768px) {
+  .Footer-module__S6Hkya__footer {
+    padding: 2.5rem 1.25rem 1.5rem;
+  }
+
   .Footer-module__S6Hkya__main {
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -200,6 +204,25 @@
 
   .Footer-module__S6Hkya__disclaimer {
     text-align: left;
+    max-width: 100%;
+  }
+
+  .Footer-module__S6Hkya__legalLinks {
+    gap: .5rem .25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .Footer-module__S6Hkya__footer {
+    padding: 2rem 1rem 1.25rem;
+  }
+
+  .Footer-module__S6Hkya__name {
+    font-size: .95rem;
+  }
+
+  .Footer-module__S6Hkya__disclosures {
+    font-size: .78rem;
   }
 }
 

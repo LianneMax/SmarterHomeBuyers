@@ -123,22 +123,16 @@
 }
 
 /* ── Responsive ──────────────────────────────── */
-@media (max-width: 840px) {
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 520px) {
+@media (max-width: 768px) {
   .section {
     padding: 4rem 1.25rem;
   }
 
-  .grid {
-    grid-template-columns: 1fr;
-  }
-
   .container {
     gap: 2.5rem;
+  }
+
+  .heading {
+    font-size: clamp(1.5rem, 6vw, 2.2rem);
   }
 }

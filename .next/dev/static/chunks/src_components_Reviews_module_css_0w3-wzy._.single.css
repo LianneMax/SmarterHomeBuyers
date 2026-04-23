@@ -276,16 +276,38 @@
 
 @media (max-width: 768px) {
   .Reviews-module__yTtV6W__section {
-    padding: 64px 0;
+    padding: 48px 0 64px;
+  }
+
+  .Reviews-module__yTtV6W__header {
+    margin-bottom: 32px;
+  }
+
+  .Reviews-module__yTtV6W__container {
+    padding: 0 16px;
+  }
+
+  .Reviews-module__yTtV6W__heading {
+    font-size: clamp(1.4rem, 6vw, 2rem);
   }
 
   .Reviews-module__yTtV6W__card {
-    min-height: 280px;
-    padding: 28px 20px;
+    min-height: 240px;
+    padding: 22px 18px;
   }
 
   .Reviews-module__yTtV6W__carousel {
-    padding: 16px 16px 28px;
+    padding: 12px 12px 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Reviews-module__yTtV6W__nav {
+    margin-top: 8px;
+  }
+
+  .Reviews-module__yTtV6W__dots {
+    margin-top: 16px;
   }
 }
 

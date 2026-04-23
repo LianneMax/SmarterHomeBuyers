@@ -102,6 +102,14 @@
 .HeroSection-module__sBkrQG__nameBlock {
   text-align: center;
   z-index: 1;
+  flex-direction: column;
+  align-items: center;
+  gap: .75rem;
+  display: flex;
+}
+
+.HeroSection-module__sBkrQG__socialRow {
+  margin-top: .25rem;
 }
 
 .HeroSection-module__sBkrQG__panelLabel {

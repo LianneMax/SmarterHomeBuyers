@@ -5,6 +5,7 @@ import Image from "next/image";
 import ApplyModal from "./ApplyModal";
 import BookModal from "./BookModal";
 import HeroDotBg, { useHeroDotHandlers } from "./HeroDotBg";
+import HeroSocialLinks from "./HeroSocialLinks";
 import styles from "./HeroSection.module.css";
 
 export default function HeroSection() {
@@ -79,6 +80,9 @@ export default function HeroSection() {
         <div className={styles.nameBlock}>
           <p className={styles.panelLabel}>Senior Loan Officer · Saxton Mortgage</p>
           <h2 className={styles.panelName}>Darren Tsai</h2>
+          <div className={styles.socialRow}>
+            <HeroSocialLinks />
+          </div>
         </div>
       </div>
 

@@ -121,23 +121,17 @@
   line-height: 1.65;
 }
 
-@media (max-width: 840px) {
-  .AboutSection-module__UGBiha__grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 520px) {
+@media (max-width: 768px) {
   .AboutSection-module__UGBiha__section {
     padding: 4rem 1.25rem;
   }
 
-  .AboutSection-module__UGBiha__grid {
-    grid-template-columns: 1fr;
-  }
-
   .AboutSection-module__UGBiha__container {
     gap: 2.5rem;
+  }
+
+  .AboutSection-module__UGBiha__heading {
+    font-size: clamp(1.5rem, 6vw, 2.2rem);
   }
 }
 

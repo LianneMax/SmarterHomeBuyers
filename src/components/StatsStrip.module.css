@@ -114,7 +114,8 @@
 
 @media (max-width: 480px) {
   .outer {
-    padding: 1.5rem 1rem;
+    padding: 2rem 1rem;
+    margin-top: 1rem;
   }
 
   .grid {
@@ -122,6 +123,16 @@
   }
 
   .card {
-    padding: 1.5rem 0.75rem 1.35rem;
+    padding: 1.5rem 0.75rem 1.25rem;
+  }
+
+  .value {
+    font-size: clamp(1.5rem, 7vw, 2rem);
+  }
+
+  .iconWrap {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
   }
 }

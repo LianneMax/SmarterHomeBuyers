@@ -285,15 +285,37 @@
 /* ── Responsive ──────────────────────────────── */
 @media (max-width: 768px) {
   .section {
-    padding: 64px 0;
+    padding: 48px 0 64px;
+  }
+
+  .header {
+    margin-bottom: 32px;
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+
+  .heading {
+    font-size: clamp(1.4rem, 6vw, 2rem);
   }
 
   .card {
-    padding: 28px 20px;
-    min-height: 280px;
+    padding: 22px 18px;
+    min-height: 240px;
   }
 
   .carousel {
-    padding: 16px 16px 28px;
+    padding: 12px 12px 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav {
+    margin-top: 8px;
+  }
+
+  .dots {
+    margin-top: 16px;
   }
 }
