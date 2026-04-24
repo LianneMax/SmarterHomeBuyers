@@ -234,7 +234,7 @@
 
   .HeroSection-module__sBkrQG__panel {
     min-height: 360px;
-    padding: 2.5rem 1.5rem;
+    padding: calc(74px + 1.5rem) 1.5rem 2rem;
   }
 
   .HeroSection-module__sBkrQG__photoArea {
@@ -255,7 +255,7 @@
 @media (max-width: 480px) {
   .HeroSection-module__sBkrQG__panel {
     min-height: 280px;
-    padding: 2rem 1rem;
+    padding: calc(66px + 1.25rem) 1rem 1.75rem;
   }
 
   .HeroSection-module__sBkrQG__photoArea {

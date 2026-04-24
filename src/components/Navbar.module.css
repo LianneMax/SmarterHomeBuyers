@@ -22,6 +22,7 @@
   display: flex;
   align-items: center;
   gap: 2rem;
+  position: relative;
 }
 
 /* ── Brand ───────────────────────────────────── */
@@ -185,37 +186,56 @@
 
 /* ── Mobile menu ─────────────────────────────── */
 .mobileMenu {
-  padding: 1rem 1.5rem 1.5rem;
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  right: 1rem;
+  width: 220px;
+  padding: 0.6rem;
+  background: var(--sand);
+  border: 1.5px solid var(--border);
+  border-radius: 14px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
   display: flex;
   flex-direction: column;
-  gap: 0.25rem;
-  border-top: 1px solid var(--border);
-  background: rgba(247,245,242,0.98);
+  gap: 0.15rem;
+  z-index: 100;
 }
 
 .mobileLink {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 500;
   color: var(--text-body);
-  padding: 0.75rem 0.5rem;
+  padding: 0.6rem 0.75rem;
   text-align: left;
-  border-bottom: 1px solid var(--border);
+  border-radius: 8px;
   cursor: pointer;
-  transition: color 0.15s;
+  transition: background 0.15s, color 0.15s;
+  background: transparent;
+  border: none;
+  font-family: var(--font-body);
+  width: 100%;
 }
 
-.mobileLink:hover { color: var(--teal-dark); }
+.mobileLink:hover {
+  background: var(--teal-mist);
+  color: var(--teal-dark);
+}
 
 .mobileCtas {
   display: flex;
-  gap: 0.75rem;
-  margin-top: 0.75rem;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-top: 0.4rem;
+  padding-top: 0.4rem;
+  border-top: 1px solid var(--border);
 }
 
 .mobileCtas .ctaBook,
 .mobileCtas .ctaApply {
-  flex: 1;
+  width: 100%;
   text-align: center;
+  padding: 0.55rem;
+  font-size: 0.78rem;
 }
 
 /* ── Responsive ──────────────────────────────── */

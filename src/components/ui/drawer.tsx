@@ -40,21 +40,23 @@ const DrawerContent = React.forwardRef<
     <DrawerOverlay />
     <DrawerPrimitive.Content
       ref={ref}
-      className={cn("fixed z-50 flex h-auto flex-col", className)}
+      className={cn("fixed inset-x-0 bottom-0 z-50 flex h-auto flex-col", className)}
       style={{
         position: "fixed",
-        left: "50%",
-        bottom: "1.5rem",
-        transform: "translateX(-50%)",
-        width: "calc(100% - 2rem)",
-        maxWidth: "520px",
+        left: 0,
+        right: 0,
+        bottom: 0,
         zIndex: 50,
+        width: "calc(100% - 2rem)",
+        maxWidth: "560px",
+        margin: "0 auto",
         display: "flex",
         flexDirection: "column",
-        borderRadius: "20px",
+        borderRadius: "20px 20px 0 0",
         background: "var(--sand)",
         border: "1.5px solid var(--border)",
-        boxShadow: "0 8px 60px rgba(0,0,0,0.22)",
+        borderBottom: "none",
+        boxShadow: "0 -4px 40px rgba(0,0,0,0.14)",
         outline: "none",
         ...style,
       }}

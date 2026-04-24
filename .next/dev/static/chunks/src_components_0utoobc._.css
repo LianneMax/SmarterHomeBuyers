@@ -23,6 +23,7 @@
   margin: 0 auto;
   padding: 0 1.5rem;
   display: flex;
+  position: relative;
 }
 
 .Navbar-module__cJzEcG__brand {
@@ -189,38 +190,55 @@
 }
 
 .Navbar-module__cJzEcG__mobileMenu {
-  border-top: 1px solid var(--border);
-  background: #f7f5f2fa;
+  background: var(--sand);
+  border: 1.5px solid var(--border);
+  z-index: 100;
+  border-radius: 14px;
   flex-direction: column;
-  gap: .25rem;
-  padding: 1rem 1.5rem 1.5rem;
+  gap: .15rem;
+  width: 220px;
+  padding: .6rem;
   display: flex;
+  position: absolute;
+  top: calc(100% + .5rem);
+  right: 1rem;
+  box-shadow: 0 8px 32px #0000001f;
 }
 
 .Navbar-module__cJzEcG__mobileLink {
   color: var(--text-body);
   text-align: left;
-  border-bottom: 1px solid var(--border);
   cursor: pointer;
-  padding: .75rem .5rem;
-  font-size: .9rem;
+  font-size: .85rem;
   font-weight: 500;
-  transition: color .15s;
+  font-family: var(--font-body);
+  background: none;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  padding: .6rem .75rem;
+  transition: background .15s, color .15s;
 }
 
 .Navbar-module__cJzEcG__mobileLink:hover {
+  background: var(--teal-mist);
   color: var(--teal-dark);
 }
 
 .Navbar-module__cJzEcG__mobileCtas {
-  gap: .75rem;
-  margin-top: .75rem;
+  border-top: 1px solid var(--border);
+  flex-direction: column;
+  gap: .4rem;
+  margin-top: .4rem;
+  padding-top: .4rem;
   display: flex;
 }
 
 .Navbar-module__cJzEcG__mobileCtas .Navbar-module__cJzEcG__ctaBook, .Navbar-module__cJzEcG__mobileCtas .Navbar-module__cJzEcG__ctaApply {
   text-align: center;
-  flex: 1;
+  width: 100%;
+  padding: .55rem;
+  font-size: .78rem;
 }
 
 @media (max-width: 720px) {
@@ -629,7 +647,7 @@
 
   .HeroSection-module__sBkrQG__panel {
     min-height: 360px;
-    padding: 2.5rem 1.5rem;
+    padding: calc(74px + 1.5rem) 1.5rem 2rem;
   }
 
   .HeroSection-module__sBkrQG__photoArea {
@@ -650,7 +668,7 @@
 @media (max-width: 480px) {
   .HeroSection-module__sBkrQG__panel {
     min-height: 280px;
-    padding: 2rem 1rem;
+    padding: calc(66px + 1.25rem) 1rem 1.75rem;
   }
 
   .HeroSection-module__sBkrQG__photoArea {

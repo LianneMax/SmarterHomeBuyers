@@ -82,22 +82,21 @@ export default function Navbar() {
             <span className={`${styles.bar} ${menuOpen ? styles.barMid : ""}`} />
             <span className={`${styles.bar} ${menuOpen ? styles.barBot : ""}`} />
           </button>
-        </div>
-
-        {/* Mobile menu */}
-        {menuOpen && (
-          <div className={styles.mobileMenu}>
-            {NAV_LINKS.map((l) => (
-              <button key={l.label} className={styles.mobileLink} onClick={() => scrollTo(l.href)}>
-                {l.label}
-              </button>
-            ))}
-            <div className={styles.mobileCtas}>
-              <button className={styles.ctaBook} onClick={() => { setBookOpen(true); setMenuOpen(false); }}>Book a Call</button>
-              <button className={styles.ctaApply} onClick={handleApply}>Apply Now</button>
+          {/* Mobile dropdown — inside .inner so it positions relative to it */}
+          {menuOpen && (
+            <div className={styles.mobileMenu}>
+              {NAV_LINKS.map((l) => (
+                <button key={l.label} className={styles.mobileLink} onClick={() => scrollTo(l.href)}>
+                  {l.label}
+                </button>
+              ))}
+              <div className={styles.mobileCtas}>
+                <button className={styles.ctaBook} onClick={() => { setBookOpen(true); setMenuOpen(false); }}>Book a Call</button>
+                <button className={styles.ctaApply} onClick={handleApply}>Apply Now</button>
+              </div>
             </div>
-          </div>
-        )}
+          )}
+        </div>
       </header>
 
       {/* Lazy-load modals only when triggered */}
