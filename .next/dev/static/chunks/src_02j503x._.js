@@ -36,6 +36,7 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Navbar$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/src/components/Navbar.module.css [app-client] (css module)");
 /* Dynamic imports to avoid loading Calendly script unless needed */ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$shared$2f$lib$2f$app$2d$dynamic$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/shared/lib/app-dynamic.js [app-client] (ecmascript)");
 ;
@@ -43,6 +44,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Navbar$
 ;
 var _s = __turbopack_context__.k.signature();
 "use client";
+;
 ;
 ;
 const NAV_LINKS = [
@@ -122,7 +124,7 @@ function Navbar() {
                                             }
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Navbar.tsx",
-                                            lineNumber: 46,
+                                            lineNumber: 47,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -131,13 +133,13 @@ function Navbar() {
                                             children: "DT"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Navbar.tsx",
-                                            lineNumber: 56,
+                                            lineNumber: 57,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/Navbar.tsx",
-                                    lineNumber: 45,
+                                    lineNumber: 46,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -148,7 +150,7 @@ function Navbar() {
                                             children: "Darren Tsai"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Navbar.tsx",
-                                            lineNumber: 59,
+                                            lineNumber: 60,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -156,35 +158,46 @@ function Navbar() {
                                             children: "Senior Loan Officer · Saxton Mortgage"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Navbar.tsx",
-                                            lineNumber: 60,
+                                            lineNumber: 61,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/Navbar.tsx",
-                                    lineNumber: 58,
+                                    lineNumber: 59,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/Navbar.tsx",
-                            lineNumber: 44,
+                            lineNumber: 45,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
                             className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Navbar$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].links,
-                            children: NAV_LINKS.map((l)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                            children: [
+                                NAV_LINKS.map((l)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Navbar$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].link,
+                                        onClick: ()=>scrollTo(l.href),
+                                        children: l.label
+                                    }, l.label, false, {
+                                        fileName: "[project]/src/components/Navbar.tsx",
+                                        lineNumber: 68,
+                                        columnNumber: 15
+                                    }, this)),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                    href: "/calculators",
                                     className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Navbar$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].link,
-                                    onClick: ()=>scrollTo(l.href),
-                                    children: l.label
-                                }, l.label, false, {
+                                    children: "Calculators"
+                                }, void 0, false, {
                                     fileName: "[project]/src/components/Navbar.tsx",
-                                    lineNumber: 67,
-                                    columnNumber: 15
-                                }, this))
-                        }, void 0, false, {
+                                    lineNumber: 72,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
                             fileName: "[project]/src/components/Navbar.tsx",
-                            lineNumber: 65,
+                            lineNumber: 66,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -198,7 +211,7 @@ function Navbar() {
                                     children: "Book a Call"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Navbar.tsx",
-                                    lineNumber: 75,
+                                    lineNumber: 77,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -207,13 +220,13 @@ function Navbar() {
                                     children: "Apply Now"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Navbar.tsx",
-                                    lineNumber: 76,
+                                    lineNumber: 78,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/Navbar.tsx",
-                            lineNumber: 74,
+                            lineNumber: 76,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -225,27 +238,27 @@ function Navbar() {
                                     className: `${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Navbar$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].bar} ${menuOpen ? __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Navbar$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].barTop : ""}`
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Navbar.tsx",
-                                    lineNumber: 81,
+                                    lineNumber: 83,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                     className: `${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Navbar$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].bar} ${menuOpen ? __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Navbar$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].barMid : ""}`
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Navbar.tsx",
-                                    lineNumber: 82,
+                                    lineNumber: 84,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                     className: `${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Navbar$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].bar} ${menuOpen ? __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Navbar$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].barBot : ""}`
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Navbar.tsx",
-                                    lineNumber: 83,
+                                    lineNumber: 85,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/Navbar.tsx",
-                            lineNumber: 80,
+                            lineNumber: 82,
                             columnNumber: 11
                         }, this),
                         menuOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -257,9 +270,19 @@ function Navbar() {
                                         children: l.label
                                     }, l.label, false, {
                                         fileName: "[project]/src/components/Navbar.tsx",
-                                        lineNumber: 89,
+                                        lineNumber: 91,
                                         columnNumber: 17
                                     }, this)),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                    href: "/calculators",
+                                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Navbar$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].mobileLink,
+                                    onClick: ()=>setMenuOpen(false),
+                                    children: "Calculators"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/Navbar.tsx",
+                                    lineNumber: 95,
+                                    columnNumber: 15
+                                }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Navbar$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].mobileCtas,
                                     children: [
@@ -272,7 +295,7 @@ function Navbar() {
                                             children: "Book a Call"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Navbar.tsx",
-                                            lineNumber: 94,
+                                            lineNumber: 99,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -281,44 +304,44 @@ function Navbar() {
                                             children: "Apply Now"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Navbar.tsx",
-                                            lineNumber: 95,
+                                            lineNumber: 100,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/Navbar.tsx",
-                                    lineNumber: 93,
+                                    lineNumber: 98,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/Navbar.tsx",
-                            lineNumber: 87,
+                            lineNumber: 89,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/Navbar.tsx",
-                    lineNumber: 42,
+                    lineNumber: 43,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/Navbar.tsx",
-                lineNumber: 41,
+                lineNumber: 42,
                 columnNumber: 7
             }, this),
             bookOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(BookModalLazy, {
                 onClose: ()=>setBookOpen(false)
             }, void 0, false, {
                 fileName: "[project]/src/components/Navbar.tsx",
-                lineNumber: 103,
+                lineNumber: 108,
                 columnNumber: 21
             }, this),
             applyOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(ApplyModalLazy, {
                 onClose: ()=>setApplyOpen(false)
             }, void 0, false, {
                 fileName: "[project]/src/components/Navbar.tsx",
-                lineNumber: 104,
+                lineNumber: 109,
                 columnNumber: 21
             }, this)
         ]
@@ -479,7 +502,7 @@ function ApplyModal({ onClose }) {
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                     className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ApplyModal$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].body,
-                    children: "You're one step closer to homeownership. Darren's secure application takes about 10 minutes — no commitment required."
+                    children: "You're one step closer to homeownership. Darren's secure application takes about 10 minutes. No commitment required."
                 }, void 0, false, {
                     fileName: "[project]/src/components/ApplyModal.tsx",
                     lineNumber: 25,
@@ -2050,6 +2073,7 @@ function VideoPanel({ id, title }) {
                     overflow: "hidden",
                     width: "100%",
                     aspectRatio: "16/9",
+                    maxHeight: "180px",
                     background: "var(--teal-mist)",
                     flexShrink: 0
                 },
@@ -2179,7 +2203,7 @@ function VideoPanel({ id, title }) {
                     lineHeight: 1.55,
                     flex: 1
                 },
-                children: "Free education on YouTube — home buying, loans, and market updates explained simply."
+                children: "Free education on YouTube: home buying, loans, and market updates explained simply."
             }, void 0, false, {
                 fileName: "[project]/src/components/StartupDrawer.tsx",
                 lineNumber: 53,
@@ -2404,7 +2428,7 @@ function CalcPanel() {
                             color: "var(--text-muted)",
                             lineHeight: 1.6
                         },
-                        children: "Estimate your monthly payment, compare loan types, and see how rate changes affect your costs — before you fill out an application."
+                        children: "Estimate your monthly payment, compare loan types, and see how rate changes affect your costs before you fill out an application."
                     }, void 0, false, {
                         fileName: "[project]/src/components/StartupDrawer.tsx",
                         lineNumber: 84,
@@ -2475,6 +2499,21 @@ function StartupDrawer() {
     _s1();
     const [open, setOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const [video, setVideo] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(FALLBACK);
+    const [isMobile, setIsMobile] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "StartupDrawer.useEffect": ()=>{
+            const check = {
+                "StartupDrawer.useEffect.check": ()=>setIsMobile(window.innerWidth < 540)
+            }["StartupDrawer.useEffect.check"];
+            check();
+            window.addEventListener("resize", check, {
+                passive: true
+            });
+            return ({
+                "StartupDrawer.useEffect": ()=>window.removeEventListener("resize", check)
+            })["StartupDrawer.useEffect"];
+        }
+    }["StartupDrawer.useEffect"], []);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "StartupDrawer.useEffect": ()=>{
             const t = setTimeout({
@@ -2509,7 +2548,7 @@ function StartupDrawer() {
                     children: "Quick Tools"
                 }, void 0, false, {
                     fileName: "[project]/src/components/StartupDrawer.tsx",
-                    lineNumber: 116,
+                    lineNumber: 124,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$drawer$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DrawerDescription"], {
@@ -2517,12 +2556,14 @@ function StartupDrawer() {
                     children: "Latest video and mortgage calculator."
                 }, void 0, false, {
                     fileName: "[project]/src/components/StartupDrawer.tsx",
-                    lineNumber: 117,
+                    lineNumber: 125,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     style: {
-                        padding: "0.5rem 1.1rem 1.25rem"
+                        padding: "0.5rem 1.1rem 1.25rem",
+                        overflowY: "auto",
+                        maxHeight: "85svh"
                     },
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2547,7 +2588,7 @@ function StartupDrawer() {
                                             children: "Smarter Home Buyers"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/StartupDrawer.tsx",
-                                            lineNumber: 123,
+                                            lineNumber: 131,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -2562,13 +2603,13 @@ function StartupDrawer() {
                                             children: "Quick Tools"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/StartupDrawer.tsx",
-                                            lineNumber: 126,
+                                            lineNumber: 134,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/StartupDrawer.tsx",
-                                    lineNumber: 122,
+                                    lineNumber: 130,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$drawer$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DrawerClose"], {
@@ -2600,34 +2641,34 @@ function StartupDrawer() {
                                                 d: "M18 6L6 18M6 6l12 12"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/StartupDrawer.tsx",
-                                                lineNumber: 134,
+                                                lineNumber: 142,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/StartupDrawer.tsx",
-                                            lineNumber: 133,
+                                            lineNumber: 141,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/StartupDrawer.tsx",
-                                        lineNumber: 131,
+                                        lineNumber: 139,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/StartupDrawer.tsx",
-                                    lineNumber: 130,
+                                    lineNumber: 138,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/StartupDrawer.tsx",
-                            lineNumber: 121,
+                            lineNumber: 129,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             style: {
                                 display: "grid",
-                                gridTemplateColumns: "1fr 1fr",
+                                gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr",
                                 gap: "0.75rem",
                                 marginBottom: "0.75rem"
                             },
@@ -2646,12 +2687,12 @@ function StartupDrawer() {
                                         title: video.title
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/StartupDrawer.tsx",
-                                        lineNumber: 143,
+                                        lineNumber: 151,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/StartupDrawer.tsx",
-                                    lineNumber: 142,
+                                    lineNumber: 150,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2665,18 +2706,18 @@ function StartupDrawer() {
                                     },
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(CalcPanel, {}, void 0, false, {
                                         fileName: "[project]/src/components/StartupDrawer.tsx",
-                                        lineNumber: 146,
+                                        lineNumber: 154,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/StartupDrawer.tsx",
-                                    lineNumber: 145,
+                                    lineNumber: 153,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/StartupDrawer.tsx",
-                            lineNumber: 141,
+                            lineNumber: 149,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$drawer$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DrawerClose"], {
@@ -2699,33 +2740,33 @@ function StartupDrawer() {
                                 children: "Maybe Later"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/StartupDrawer.tsx",
-                                lineNumber: 152,
+                                lineNumber: 160,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/StartupDrawer.tsx",
-                            lineNumber: 151,
+                            lineNumber: 159,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/StartupDrawer.tsx",
-                    lineNumber: 119,
+                    lineNumber: 127,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/StartupDrawer.tsx",
-            lineNumber: 115,
+            lineNumber: 123,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/StartupDrawer.tsx",
-        lineNumber: 114,
+        lineNumber: 122,
         columnNumber: 5
     }, this);
 }
-_s1(StartupDrawer, "YfH2JeyIkSvRTEzpT1asxqbHbEY=");
+_s1(StartupDrawer, "kdPkDvodqinmZBdsEGZM/3KeGbg=");
 _c2 = StartupDrawer;
 var _c, _c1, _c2;
 __turbopack_context__.k.register(_c, "VideoPanel");
@@ -3469,13 +3510,13 @@ const pillars = [
     {
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$list$2d$ordered$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ListOrdered$3e$__["ListOrdered"],
         title: "Step-by-Step Guidance",
-        description: "From pre-approval to closing, we walk you through every phase — no surprises, no confusion.",
+        description: "From pre-approval to closing, we walk you through every phase. No surprises, no confusion.",
         color: "#F97316"
     },
     {
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$layout$2d$list$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__LayoutList$3e$__["LayoutList"],
         title: "All Loan Types, No Games",
-        description: "FHA, VA, Conventional, Jumbo — Darren lays out your options honestly. If a loan is a bad idea for you, he will say so.",
+        description: "FHA, VA, Conventional, Jumbo. Darren lays out your options honestly. If a loan is a bad idea for you, he will say so.",
         color: "#EAB308"
     },
     {
@@ -3487,13 +3528,13 @@ const pillars = [
     {
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trending$2d$up$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__TrendingUp$3e$__["TrendingUp"],
         title: "Long-Term Planning",
-        description: "Homeownership is a milestone, not just a transaction. We help you think beyond the purchase — equity, refinancing, and what comes next.",
+        description: "Homeownership is a milestone, not just a transaction. We help you think beyond the purchase: equity, refinancing, and what comes next.",
         color: "#3B82F6"
     },
     {
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$star$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Star$3e$__["Star"],
         title: "5-Star Client Experience",
-        description: "Speed, communication, and honesty — that is what clients consistently highlight. Darren reviews every file personally.",
+        description: "Speed, communication, and honesty. That is what clients consistently highlight. Darren reviews every file personally.",
         color: "#A855F7"
     },
     {
@@ -3696,7 +3737,7 @@ const REVIEWS = [
         initials: "PP",
         name: "Paul P.",
         category: "Transaction · REALTOR®",
-        text: "I recently worked with Darren Tsai at Saxton Mortgage on a transaction, and the entire process was very smooth from start to finish. Darren was professional, responsive, and proactive throughout escrow. Communication was clear and consistent, which helped ensure we stayed on track and closed without issues. It's always a pleasure working with a lender who understands timelines and works efficiently with all parties involved. I look forward to working together again on future transactions. — Paul Phan, REALTOR®"
+        text: "I recently worked with Darren Tsai at Saxton Mortgage on a transaction, and the entire process was very smooth from start to finish. Darren was professional, responsive, and proactive throughout escrow. Communication was clear and consistent, which helped ensure we stayed on track and closed without issues. It's always a pleasure working with a lender who understands timelines and works efficiently with all parties involved. I look forward to working together again on future transactions. - Paul Phan, REALTOR®"
     },
     {
         id: 8,
@@ -4689,7 +4730,7 @@ const FEATURED = {
 const SECONDARY = [
     {
         id: "TD1ahQAGkuQ",
-        title: "VA vs Conventional — Which Loan Is Right for You?"
+        title: "VA vs Conventional: Which Loan Is Right for You?"
     },
     {
         id: "ulTVOMnOVS4",
@@ -4740,7 +4781,7 @@ const PLAYLISTS = [
     },
     {
         title: "Maximizing Home Equity & Refinancing",
-        description: "Already own? Cash-out, rate drops, smart refi timing — make your equity work harder without getting burned.",
+        description: "Already own? Cash-out, rate drops, smart refi timing. Make your equity work harder without getting burned.",
         url: "https://youtube.com/playlist?list=PLmNxrYNLvOsfX_sHuKsVtESbIeifmjDpa&si=cDKxnZXeubXsMTbG",
         gradient: "linear-gradient(135deg, #10B981 0%, #0891B2 100%)",
         badge: "For Owners",
@@ -4777,7 +4818,7 @@ const PLAYLISTS = [
     },
     {
         title: "First-Time Home Buyer's Guide",
-        description: "Never bought before? This is where you start. Pre-approval to closing day — every step, zero confusion.",
+        description: "Never bought before? This is where you start. Pre-approval to closing day, every step covered, zero confusion.",
         url: "https://youtube.com/playlist?list=PLmNxrYNLvOsf0vIMZzpjHo6OGklQIw5T0&si=62_zqBkOcXKYR6",
         gradient: "linear-gradient(135deg, #6366F1 0%, #3B82F6 100%)",
         badge: "Start Here",
@@ -4945,7 +4986,7 @@ function VideoSection() {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$VideoSection$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].sub,
-                                    children: "Darren breaks down the whole process — free, on YouTube, no fluff."
+                                    children: "Darren breaks down the whole process, free on YouTube, no fluff."
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/VideoSection.tsx",
                                     lineNumber: 138,

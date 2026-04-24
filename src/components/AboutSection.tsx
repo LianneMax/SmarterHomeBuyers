@@ -9,13 +9,13 @@ const pillars = [
   {
     icon: ListOrdered,
     title: "Step-by-Step Guidance",
-    description: "From pre-approval to closing, we walk you through every phase — no surprises, no confusion.",
+    description: "From pre-approval to closing, we walk you through every phase. No surprises, no confusion.",
     color: "#F97316",
   },
   {
     icon: LayoutList,
     title: "All Loan Types, No Games",
-    description: "FHA, VA, Conventional, Jumbo — Darren lays out your options honestly. If a loan is a bad idea for you, he will say so.",
+    description: "FHA, VA, Conventional, Jumbo. Darren lays out your options honestly. If a loan is a bad idea for you, he will say so.",
     color: "#EAB308",
   },
   {
@@ -27,13 +27,13 @@ const pillars = [
   {
     icon: TrendingUp,
     title: "Long-Term Planning",
-    description: "Homeownership is a milestone, not just a transaction. We help you think beyond the purchase — equity, refinancing, and what comes next.",
+    description: "Homeownership is a milestone, not just a transaction. We help you think beyond the purchase: equity, refinancing, and what comes next.",
     color: "#3B82F6",
   },
   {
     icon: Star,
     title: "5-Star Client Experience",
-    description: "Speed, communication, and honesty — that is what clients consistently highlight. Darren reviews every file personally.",
+    description: "Speed, communication, and honesty. That is what clients consistently highlight. Darren reviews every file personally.",
     color: "#A855F7",
   },
   {

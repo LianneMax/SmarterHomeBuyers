@@ -1,12 +1,13 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import styles from "./Navbar.module.css";
 
 const NAV_LINKS = [
-  { label: "About",     href: "#about" },
-  { label: "Reviews",   href: "#reviews" },
-  { label: "Education", href: "#education" },
+  { label: "About",       href: "#about" },
+  { label: "Reviews",     href: "#reviews" },
+  { label: "Education",   href: "#education" },
 ];
 
 export default function Navbar() {
@@ -68,6 +69,7 @@ export default function Navbar() {
                 {l.label}
               </button>
             ))}
+            <Link href="/calculators" className={styles.link}>Calculators</Link>
           </nav>
 
           {/* Desktop CTAs */}
@@ -90,6 +92,9 @@ export default function Navbar() {
                   {l.label}
                 </button>
               ))}
+              <Link href="/calculators" className={styles.mobileLink} onClick={() => setMenuOpen(false)}>
+                Calculators
+              </Link>
               <div className={styles.mobileCtas}>
                 <button className={styles.ctaBook} onClick={() => { setBookOpen(true); setMenuOpen(false); }}>Book a Call</button>
                 <button className={styles.ctaApply} onClick={handleApply}>Apply Now</button>

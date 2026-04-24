@@ -24,7 +24,7 @@ export default function ApplyModal({ onClose }: ApplyModalProps) {
         <h2 className={styles.title}>Start Your Application</h2>
         <p className={styles.body}>
           You&apos;re one step closer to homeownership. Darren&apos;s secure
-          application takes about 10 minutes — no commitment required.
+          application takes about 10 minutes. No commitment required.
         </p>
         <ul className={styles.checklist}>
           <li>No hard credit pull to get started</li>

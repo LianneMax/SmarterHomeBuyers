@@ -7,7 +7,7 @@ import styles from "./calculators.module.css";
 function fmt(n: number) {
   return n > 0
     ? n.toLocaleString("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 })
-    : "—";
+    : "-";
 }
 
 /* ── Monthly Payment Calculator ── */
@@ -195,8 +195,8 @@ function RefinanceCalc() {
       <div className={styles.result}>
         <div className={styles.resultRow}><span>Current Payment</span><strong>{fmt(pay1)}</strong></div>
         <div className={styles.resultRow}><span>New Payment</span><strong>{fmt(pay2)}</strong></div>
-        <div className={styles.resultRow}><span>Monthly Savings</span><strong style={{ color: savings > 0 ? "#22C55E" : "var(--text-muted)" }}>{savings > 0 ? fmt(savings) : "—"}</strong></div>
-        <div className={styles.resultTotal}><span>Break-Even</span><strong>{breakEven > 0 ? `${breakEven} months` : "—"}</strong></div>
+        <div className={styles.resultRow}><span>Monthly Savings</span><strong style={{ color: savings > 0 ? "#22C55E" : "var(--text-muted)" }}>{savings > 0 ? fmt(savings) : "-"}</strong></div>
+        <div className={styles.resultTotal}><span>Break-Even</span><strong>{breakEven > 0 ? `${breakEven} months` : "-"}</strong></div>
       </div>
     </div>
   );
@@ -268,7 +268,7 @@ export default function CalculatorsPage() {
           <div className={styles.tag}>Free Tools</div>
           <h1 className={styles.pageTitle}>Mortgage Calculators</h1>
           <p className={styles.pageSub}>
-            Crunch the numbers before you commit. All calculators are free — no sign-up, no strings attached.
+            Crunch the numbers before you commit. All calculators are free. No sign-up, no strings attached.
           </p>
         </div>
 

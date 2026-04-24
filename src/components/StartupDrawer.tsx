@@ -25,7 +25,7 @@ function VideoPanel({ id, title }: { id: string; title: string }) {
       <span style={{ fontSize: "0.62rem", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "var(--text-muted)" }}>
         Latest Video
       </span>
-      <div style={{ position: "relative", borderRadius: "10px", overflow: "hidden", width: "100%", aspectRatio: "16/9", background: "var(--teal-mist)", flexShrink: 0 }}>
+      <div style={{ position: "relative", borderRadius: "10px", overflow: "hidden", width: "100%", aspectRatio: "16/9", maxHeight: "180px", background: "var(--teal-mist)", flexShrink: 0 }}>
         {playing ? (
           <iframe
             style={{ position: "absolute", inset: 0, width: "100%", height: "100%", border: "none" }}
@@ -51,7 +51,7 @@ function VideoPanel({ id, title }: { id: string; title: string }) {
         )}
       </div>
       <p style={{ fontSize: "0.75rem", color: "var(--text-muted)", lineHeight: 1.55, flex: 1 }}>
-        Free education on YouTube — home buying, loans, and market updates explained simply.
+        Free education on YouTube: home buying, loans, and market updates explained simply.
       </p>
       <a href="https://www.youtube.com/@DarrenTsai_" target="_blank" rel="noopener noreferrer"
         style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "0.4rem", padding: "0.65rem 1rem", background: "var(--teal-dark)", color: "var(--white)", borderRadius: "8px", fontSize: "0.78rem", fontWeight: 600, letterSpacing: "0.05em", textDecoration: "none" }}>
@@ -82,7 +82,7 @@ function CalcPanel() {
           Plan your payment before you apply.
         </p>
         <p style={{ fontSize: "0.78rem", color: "var(--text-muted)", lineHeight: 1.6 }}>
-          Estimate your monthly payment, compare loan types, and see how rate changes affect your costs — before you fill out an application.
+          Estimate your monthly payment, compare loan types, and see how rate changes affect your costs before you fill out an application.
         </p>
       </div>
       <a href="https://www.realdarrentsai.com/mortgage-calculator" target="_blank" rel="noopener noreferrer"
@@ -97,6 +97,14 @@ function CalcPanel() {
 export default function StartupDrawer() {
   const [open, setOpen] = useState(false);
   const [video, setVideo] = useState(FALLBACK);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth < 540);
+    check();
+    window.addEventListener("resize", check, { passive: true });
+    return () => window.removeEventListener("resize", check);
+  }, []);
 
   useEffect(() => {
     const t = setTimeout(() => setOpen(true), 1500);
@@ -116,7 +124,7 @@ export default function StartupDrawer() {
         <DrawerTitle style={srOnly}>Quick Tools</DrawerTitle>
         <DrawerDescription style={srOnly}>Latest video and mortgage calculator.</DrawerDescription>
 
-        <div style={{ padding: "0.5rem 1.1rem 1.25rem" }}>
+        <div style={{ padding: "0.5rem 1.1rem 1.25rem", overflowY: "auto", maxHeight: "85svh" }}>
           {/* Header */}
           <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: "0.85rem" }}>
             <div>
@@ -138,7 +146,7 @@ export default function StartupDrawer() {
           </div>
 
           {/* Cards */}
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "0.75rem", marginBottom: "0.75rem" }}>
+          <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr", gap: "0.75rem", marginBottom: "0.75rem" }}>
             <div style={{ background: "var(--white)", borderRadius: "12px", border: "1.5px solid var(--border)", padding: "0.8rem", display: "flex", flexDirection: "column" }}>
               <VideoPanel id={video.id} title={video.title} />
             </div>

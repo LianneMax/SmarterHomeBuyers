@@ -13,7 +13,7 @@ const FEATURED = {
 };
 
 const SECONDARY = [
-  { id: "TD1ahQAGkuQ", title: "VA vs Conventional — Which Loan Is Right for You?" },
+  { id: "TD1ahQAGkuQ", title: "VA vs Conventional: Which Loan Is Right for You?" },
   { id: "ulTVOMnOVS4", title: "How To Buy A House In 2024: 5 Steps" },
   { id: "I4sXpzq5AF0", title: "5 Mortgage Mistakes That Cost You Thousands" },
 ];
@@ -34,7 +34,7 @@ const PLAYLISTS = [
   },
   {
     title: "Maximizing Home Equity & Refinancing",
-    description: "Already own? Cash-out, rate drops, smart refi timing — make your equity work harder without getting burned.",
+    description: "Already own? Cash-out, rate drops, smart refi timing. Make your equity work harder without getting burned.",
     url: "https://youtube.com/playlist?list=PLmNxrYNLvOsfX_sHuKsVtESbIeifmjDpa&si=cDKxnZXeubXsMTbG",
     gradient: "linear-gradient(135deg, #10B981 0%, #0891B2 100%)",
     badge: "For Owners",
@@ -47,7 +47,7 @@ const PLAYLISTS = [
   },
   {
     title: "First-Time Home Buyer's Guide",
-    description: "Never bought before? This is where you start. Pre-approval to closing day — every step, zero confusion.",
+    description: "Never bought before? This is where you start. Pre-approval to closing day, every step covered, zero confusion.",
     url: "https://youtube.com/playlist?list=PLmNxrYNLvOsf0vIMZzpjHo6OGklQIw5T0&si=62_zqBkOcXKYR6",
     gradient: "linear-gradient(135deg, #6366F1 0%, #3B82F6 100%)",
     badge: "Start Here",
@@ -136,7 +136,7 @@ export default function VideoSection() {
           <h2 className={styles.heading}>Yes, you can buy a house.</h2>
           <div className={styles.headerRow}>
             <p className={styles.sub}>
-              Darren breaks down the whole process — free, on YouTube, no fluff.
+              Darren breaks down the whole process, free on YouTube, no fluff.
             </p>
             <a
               href="https://www.youtube.com/@DarrenTsai_"
