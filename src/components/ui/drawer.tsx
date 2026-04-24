@@ -2,7 +2,6 @@
 
 import * as React from "react"
 import { Drawer as DrawerPrimitive } from "vaul"
-
 import { cn } from "@/lib/utils"
 
 const Drawer = ({
@@ -17,18 +16,17 @@ const Drawer = ({
 Drawer.displayName = "Drawer"
 
 const DrawerTrigger = DrawerPrimitive.Trigger
-
 const DrawerPortal = DrawerPrimitive.Portal
-
 const DrawerClose = DrawerPrimitive.Close
 
 const DrawerOverlay = React.forwardRef<
   React.ElementRef<typeof DrawerPrimitive.Overlay>,
   React.ComponentPropsWithoutRef<typeof DrawerPrimitive.Overlay>
->(({ className, ...props }, ref) => (
+>(({ className, style, ...props }, ref) => (
   <DrawerPrimitive.Overlay
     ref={ref}
-    className={cn("fixed inset-0 z-50 bg-black/80", className)}
+    className={cn("fixed inset-0 z-50", className)}
+    style={{ position: "fixed", inset: 0, zIndex: 50, background: "rgba(0,0,0,0.65)", backdropFilter: "blur(2px)", ...style }}
     {...props}
   />
 ))
@@ -37,18 +35,39 @@ DrawerOverlay.displayName = DrawerPrimitive.Overlay.displayName
 const DrawerContent = React.forwardRef<
   React.ElementRef<typeof DrawerPrimitive.Content>,
   React.ComponentPropsWithoutRef<typeof DrawerPrimitive.Content>
->(({ className, children, ...props }, ref) => (
+>(({ className, children, style, ...props }, ref) => (
   <DrawerPortal>
     <DrawerOverlay />
     <DrawerPrimitive.Content
       ref={ref}
-      className={cn(
-        "fixed inset-x-0 bottom-0 z-50 mt-24 flex h-auto flex-col rounded-t-[10px] border bg-background",
-        className
-      )}
+      className={cn("fixed z-50 flex h-auto flex-col", className)}
+      style={{
+        position: "fixed",
+        left: "50%",
+        bottom: "1.5rem",
+        transform: "translateX(-50%)",
+        width: "calc(100% - 2rem)",
+        maxWidth: "520px",
+        zIndex: 50,
+        display: "flex",
+        flexDirection: "column",
+        borderRadius: "20px",
+        background: "var(--sand)",
+        border: "1.5px solid var(--border)",
+        boxShadow: "0 8px 60px rgba(0,0,0,0.22)",
+        outline: "none",
+        ...style,
+      }}
       {...props}
     >
-      <div className="mx-auto mt-4 h-2 w-[100px] rounded-full bg-muted" />
+      <div style={{
+        width: 40,
+        height: 4,
+        borderRadius: 9999,
+        background: "var(--border)",
+        margin: "10px auto 0",
+        flexShrink: 0,
+      }} />
       {children}
     </DrawerPrimitive.Content>
   </DrawerPortal>
@@ -83,10 +102,7 @@ const DrawerTitle = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <DrawerPrimitive.Title
     ref={ref}
-    className={cn(
-      "text-lg font-semibold leading-none tracking-tight",
-      className
-    )}
+    className={cn("text-lg font-semibold leading-none tracking-tight", className)}
     {...props}
   />
 ))

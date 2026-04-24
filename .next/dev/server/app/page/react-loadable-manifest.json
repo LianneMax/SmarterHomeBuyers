@@ -3,14 +3,14 @@
     "id": "[project]/src/components/BookModal.tsx [app-client] (ecmascript, next/dynamic entry)",
     "files": [
       "static/chunks/src_components_BookModal_tsx_0.-_.la._.js",
-      "static/chunks/src_components_BookModal_tsx_0zqjv_v._.js"
+      "static/chunks/src_components_BookModal_tsx_0ds2lhu._.js"
     ]
   },
   "[project]/src/components/ApplyModal.tsx [app-client] (ecmascript, next/dynamic entry)": {
     "id": "[project]/src/components/ApplyModal.tsx [app-client] (ecmascript, next/dynamic entry)",
     "files": [
       "static/chunks/src_components_ApplyModal_tsx_0bfjwir._.js",
-      "static/chunks/src_components_ApplyModal_tsx_0zqjv_v._.js"
+      "static/chunks/src_components_ApplyModal_tsx_0ds2lhu._.js"
     ]
   }
 }

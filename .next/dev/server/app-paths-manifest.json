@@ -1,3 +1,5 @@
 {
+  "/api/latest-video/route": "app/api/latest-video/route.js",
+  "/calculators/page": "app/calculators/page.js",
   "/page": "app/page.js"
 }
