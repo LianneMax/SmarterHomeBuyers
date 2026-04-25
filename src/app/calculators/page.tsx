@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, type ChangeEvent } from "react";
 import Link from "next/link";
 import styles from "./calculators.module.css";
 
@@ -40,16 +40,16 @@ function PaymentCalc() {
       <div className={styles.fields}>
         <div className={styles.field}>
           <label>Home Price / Loan Amount</label>
-          <div className={styles.inputWrap}><span className={styles.prefix}>$</span><input type="number" value={loan} onChange={e => setLoan(e.target.value)} placeholder="400000"/></div>
+          <div className={styles.inputWrap}><span className={styles.prefix}>$</span><input type="number" value={loan} onChange={(e: ChangeEvent<HTMLInputElement>) => setLoan(e.target.value)} placeholder="400000"/></div>
         </div>
         <div className={styles.row2}>
           <div className={styles.field}>
             <label>Interest Rate</label>
-            <div className={styles.inputWrap}><input type="number" step="0.1" value={rate} onChange={e => setRate(e.target.value)} placeholder="7.0"/><span className={styles.suffix}>%</span></div>
+            <div className={styles.inputWrap}><input type="number" step="0.1" value={rate} onChange={(e: ChangeEvent<HTMLInputElement>) => setRate(e.target.value)} placeholder="7.0"/><span className={styles.suffix}>%</span></div>
           </div>
           <div className={styles.field}>
             <label>Loan Term</label>
-            <select value={term} onChange={e => setTerm(e.target.value)}>
+            <select value={term} onChange={(e: ChangeEvent<HTMLSelectElement>) => setTerm(e.target.value)}>
               <option value="10">10 years</option>
               <option value="15">15 years</option>
               <option value="20">20 years</option>
@@ -60,11 +60,11 @@ function PaymentCalc() {
         <div className={styles.row2}>
           <div className={styles.field}>
             <label>Property Tax / mo</label>
-            <div className={styles.inputWrap}><span className={styles.prefix}>$</span><input type="number" value={tax} onChange={e => setTax(e.target.value)} placeholder="400"/></div>
+            <div className={styles.inputWrap}><span className={styles.prefix}>$</span><input type="number" value={tax} onChange={(e: ChangeEvent<HTMLInputElement>) => setTax(e.target.value)} placeholder="400"/></div>
           </div>
           <div className={styles.field}>
             <label>Insurance / mo</label>
-            <div className={styles.inputWrap}><span className={styles.prefix}>$</span><input type="number" value={ins} onChange={e => setIns(e.target.value)} placeholder="120"/></div>
+            <div className={styles.inputWrap}><span className={styles.prefix}>$</span><input type="number" value={ins} onChange={(e: ChangeEvent<HTMLInputElement>) => setIns(e.target.value)} placeholder="120"/></div>
           </div>
         </div>
       </div>
@@ -111,21 +111,21 @@ function AffordabilityCalc() {
         <div className={styles.row2}>
           <div className={styles.field}>
             <label>Gross Monthly Income</label>
-            <div className={styles.inputWrap}><span className={styles.prefix}>$</span><input type="number" value={income} onChange={e => setIncome(e.target.value)} placeholder="8000"/></div>
+            <div className={styles.inputWrap}><span className={styles.prefix}>$</span><input type="number" value={income} onChange={(e: ChangeEvent<HTMLInputElement>) => setIncome(e.target.value)} placeholder="8000"/></div>
           </div>
           <div className={styles.field}>
             <label>Monthly Debt Payments</label>
-            <div className={styles.inputWrap}><span className={styles.prefix}>$</span><input type="number" value={debts} onChange={e => setDebts(e.target.value)} placeholder="500"/></div>
+            <div className={styles.inputWrap}><span className={styles.prefix}>$</span><input type="number" value={debts} onChange={(e: ChangeEvent<HTMLInputElement>) => setDebts(e.target.value)} placeholder="500"/></div>
           </div>
         </div>
         <div className={styles.row2}>
           <div className={styles.field}>
             <label>Interest Rate</label>
-            <div className={styles.inputWrap}><input type="number" step="0.1" value={rate} onChange={e => setRate(e.target.value)} placeholder="7.0"/><span className={styles.suffix}>%</span></div>
+            <div className={styles.inputWrap}><input type="number" step="0.1" value={rate} onChange={(e: ChangeEvent<HTMLInputElement>) => setRate(e.target.value)} placeholder="7.0"/><span className={styles.suffix}>%</span></div>
           </div>
           <div className={styles.field}>
             <label>Down Payment</label>
-            <div className={styles.inputWrap}><input type="number" value={down} onChange={e => setDown(e.target.value)} placeholder="20"/><span className={styles.suffix}>%</span></div>
+            <div className={styles.inputWrap}><input type="number" value={down} onChange={(e: ChangeEvent<HTMLInputElement>) => setDown(e.target.value)} placeholder="20"/><span className={styles.suffix}>%</span></div>
           </div>
         </div>
       </div>
@@ -174,21 +174,21 @@ function RefinanceCalc() {
         <div className={styles.row2}>
           <div className={styles.field}>
             <label>Current Loan Balance</label>
-            <div className={styles.inputWrap}><span className={styles.prefix}>$</span><input type="number" value={balance} onChange={e => setBalance(e.target.value)} placeholder="350000"/></div>
+            <div className={styles.inputWrap}><span className={styles.prefix}>$</span><input type="number" value={balance} onChange={(e: ChangeEvent<HTMLInputElement>) => setBalance(e.target.value)} placeholder="350000"/></div>
           </div>
           <div className={styles.field}>
             <label>Closing Costs</label>
-            <div className={styles.inputWrap}><span className={styles.prefix}>$</span><input type="number" value={closingCosts} onChange={e => setClosingCosts(e.target.value)} placeholder="5000"/></div>
+            <div className={styles.inputWrap}><span className={styles.prefix}>$</span><input type="number" value={closingCosts} onChange={(e: ChangeEvent<HTMLInputElement>) => setClosingCosts(e.target.value)} placeholder="5000"/></div>
           </div>
         </div>
         <div className={styles.row2}>
           <div className={styles.field}>
             <label>Current Rate</label>
-            <div className={styles.inputWrap}><input type="number" step="0.1" value={currentRate} onChange={e => setCurrentRate(e.target.value)} placeholder="7.5"/><span className={styles.suffix}>%</span></div>
+            <div className={styles.inputWrap}><input type="number" step="0.1" value={currentRate} onChange={(e: ChangeEvent<HTMLInputElement>) => setCurrentRate(e.target.value)} placeholder="7.5"/><span className={styles.suffix}>%</span></div>
           </div>
           <div className={styles.field}>
             <label>New Rate</label>
-            <div className={styles.inputWrap}><input type="number" step="0.1" value={newRate} onChange={e => setNewRate(e.target.value)} placeholder="6.5"/><span className={styles.suffix}>%</span></div>
+            <div className={styles.inputWrap}><input type="number" step="0.1" value={newRate} onChange={(e: ChangeEvent<HTMLInputElement>) => setNewRate(e.target.value)} placeholder="6.5"/><span className={styles.suffix}>%</span></div>
           </div>
         </div>
       </div>
@@ -230,11 +230,11 @@ function DownPaymentCalc() {
       <div className={styles.fields}>
         <div className={styles.field}>
           <label>Home Purchase Price</label>
-          <div className={styles.inputWrap}><span className={styles.prefix}>$</span><input type="number" value={price} onChange={e => setPrice(e.target.value)} placeholder="500000"/></div>
+          <div className={styles.inputWrap}><span className={styles.prefix}>$</span><input type="number" value={price} onChange={(e: ChangeEvent<HTMLInputElement>) => setPrice(e.target.value)} placeholder="500000"/></div>
         </div>
         <div className={styles.field}>
           <label>Down Payment Percentage</label>
-          <div className={styles.inputWrap}><input type="range" min="3" max="50" value={down} onChange={e => setDown(e.target.value)} style={{ flex: 1, accentColor: "var(--teal-mid)" }}/><span style={{ minWidth: "3rem", textAlign: "right", fontWeight: 700, color: "var(--teal-mid)" }}>{down}%</span></div>
+          <div className={styles.inputWrap}><input type="range" min="3" max="50" value={down} onChange={(e: ChangeEvent<HTMLInputElement>) => setDown(e.target.value)} style={{ flex: 1, accentColor: "var(--teal-mid)" }}/><span style={{ minWidth: "3rem", textAlign: "right", fontWeight: 700, color: "var(--teal-mid)" }}>{down}%</span></div>
         </div>
       </div>
       <div className={styles.result}>

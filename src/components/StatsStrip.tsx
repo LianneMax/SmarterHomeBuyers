@@ -1,10 +1,23 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
 import { useInView } from "@/hooks/useInView";
 import styles from "./StatsStrip.module.css";
 
-const STATS = [
+interface StatItem {
+  value: number;
+  suffix: string;
+  label: string;
+  accent: string;
+  icon: ReactNode;
+}
+
+interface CounterProps {
+  target: number;
+  suffix: string;
+}
+
+const STATS: StatItem[] = [
   {
     value: 8,
     suffix: "",
@@ -54,7 +67,7 @@ const STATS = [
   },
 ];
 
-function Counter({ target, suffix }: { target: number; suffix: string }) {
+function Counter({ target, suffix }: CounterProps) {
   const [count, setCount] = useState(0);
   const { ref, inView } = useInView(0.3);
   const done = useRef(false);
@@ -74,7 +87,7 @@ function Counter({ target, suffix }: { target: number; suffix: string }) {
   }, [inView, target]);
 
   return (
-    <span ref={ref as React.RefObject<HTMLSpanElement>} className={styles.value}>
+    <span ref={ref as React.RefObject<HTMLSpanElement>} className={styles.value} aria-live="polite">
       {count}{suffix}
     </span>
   );

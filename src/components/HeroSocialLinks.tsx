@@ -1,8 +1,16 @@
 "use client";
 
+import { type ReactNode } from "react";
 import { motion } from "motion/react";
 
-const SOCIALS = [
+interface SocialItem {
+  label: string;
+  href: string;
+  icon: ReactNode;
+  color: string;
+}
+
+const SOCIALS: SocialItem[] = [
   {
     label: "YouTube",
     href: "https://www.youtube.com/@DarrenTsai_",

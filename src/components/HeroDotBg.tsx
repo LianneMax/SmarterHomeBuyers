@@ -35,17 +35,16 @@ function generateDots(width: number, height: number): Dot[] {
   return dots;
 }
 
-function DotItem({
-  dot,
-  index,
-  mouseX,
-  mouseY,
-}: {
+type MotionValue = ReturnType<typeof useMotionValue<number>>;
+
+interface DotItemProps {
   dot: Dot;
   index: number;
-  mouseX: ReturnType<typeof useMotionValue<number>>;
-  mouseY: ReturnType<typeof useMotionValue<number>>;
-}) {
+  mouseX: MotionValue;
+  mouseY: MotionValue;
+}
+
+function DotItem({ dot, index, mouseX, mouseY }: DotItemProps) {
   const posX = useTransform([mouseX, mouseY], () => {
     const mx = mouseX.get(), my = mouseY.get();
     if (!Number.isFinite(mx) || !Number.isFinite(my)) return 0;
@@ -104,10 +103,6 @@ function DotItem({
   );
 }
 
-interface HeroDotBgProps {
-  onMouseMove?: (e: React.MouseEvent<HTMLDivElement>) => void;
-  onMouseLeave?: () => void;
-}
 
 export function useHeroDotHandlers() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -129,13 +124,13 @@ export function useHeroDotHandlers() {
   return { containerRef, mouseX, mouseY, handleMouseMove, handleMouseLeave };
 }
 
-interface HeroDotBgInternalProps {
+interface HeroDotBgProps {
   containerRef: React.RefObject<HTMLDivElement>;
-  mouseX: ReturnType<typeof useMotionValue<number>>;
-  mouseY: ReturnType<typeof useMotionValue<number>>;
+  mouseX: MotionValue;
+  mouseY: MotionValue;
 }
 
-export default function HeroDotBg({ containerRef, mouseX, mouseY }: HeroDotBgInternalProps) {
+export default function HeroDotBg({ containerRef, mouseX, mouseY }: HeroDotBgProps) {
   const [dots, setDots] = useState<Dot[]>([]);
 
   useEffect(() => {

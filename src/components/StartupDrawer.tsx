@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, type CSSProperties } from "react";
 import Image from "next/image";
 import {
   Drawer,
@@ -12,7 +12,7 @@ import {
 
 const FALLBACK = { id: "JjEbd-vSZV4", title: "How To Get Prequalified For A Home Loan" };
 
-const srOnly: React.CSSProperties = {
+const srOnly: CSSProperties = {
   position: "absolute", width: "1px", height: "1px",
   padding: 0, margin: "-1px", overflow: "hidden",
   clip: "rect(0,0,0,0)", whiteSpace: "nowrap", border: 0,

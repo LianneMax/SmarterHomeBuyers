@@ -1,10 +1,26 @@
 "use client";
 
-import { useState } from "react";
+import { useState, type ReactNode } from "react";
 import Image from "next/image";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import PlaylistFlipCard from "./kokonutui/playlist-flip-card";
 import styles from "./VideoSection.module.css";
+
+interface VideoCardProps {
+  id: string;
+  title: string;
+  label?: string;
+  large?: boolean;
+}
+
+interface PlaylistItem {
+  title: string;
+  description: string;
+  url: string;
+  gradient: string;
+  badge: string;
+  icon: ReactNode;
+}
 
 const FEATURED = {
   id: "JjEbd-vSZV4",
@@ -18,7 +34,7 @@ const SECONDARY = [
   { id: "I4sXpzq5AF0", title: "5 Mortgage Mistakes That Cost You Thousands" },
 ];
 
-const PLAYLISTS = [
+const PLAYLISTS: PlaylistItem[] = [
   {
     title: "Real Estate Market Updates & News",
     description: "Is now the right time to buy? Darren tracks rate shifts, market trends, and what they actually mean for your move.",
@@ -59,17 +75,7 @@ const PLAYLISTS = [
   },
 ];
 
-function VideoCard({
-  id,
-  title,
-  label,
-  large = false,
-}: {
-  id: string;
-  title: string;
-  label?: string;
-  large?: boolean;
-}) {
+function VideoCard({ id, title, label, large = false }: VideoCardProps) {
   const [playing, setPlaying] = useState(false);
 
   return (
