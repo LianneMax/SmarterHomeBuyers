@@ -14,6 +14,7 @@ export default function Home() {
           <HeroSection />
         </section>
         <StatsStrip />
+        <div style={{ background: "var(--sand)", height: "2rem" }} />
         <section id="education" style={{ scrollMarginTop: "74px" }}>
           <VideoSection />
         </section>
