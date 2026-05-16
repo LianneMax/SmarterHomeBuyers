@@ -268,7 +268,7 @@ export default function CalculatorsPage() {
           <div className={styles.tag}>Free Tools</div>
           <h1 className={styles.pageTitle}>Mortgage Calculators</h1>
           <p className={styles.pageSub}>
-            Crunch the numbers before you commit. All calculators are free. No sign-up, no strings attached.
+            Ball park your numbers. All calculators are free. No sign-up, no strings attached.
           </p>
         </div>
 
@@ -276,16 +276,14 @@ export default function CalculatorsPage() {
         <div className={styles.grid}>
           <PaymentCalc />
           <AffordabilityCalc />
-          <RefinanceCalc />
-          <DownPaymentCalc />
         </div>
 
         {/* CTA */}
         <div className={styles.cta}>
           <p className={styles.ctaText}>Numbers looking good? Let's make it official.</p>
           <div className={styles.ctaBtns}>
-            <a href="https://apply.saxtoncorp.com/darren-tsai" target="_blank" rel="noopener noreferrer" className={styles.ctaPrimary}>Apply Now</a>
-            <a href="https://calendly.com/darrent-saxtonmortgage/15min" target="_blank" rel="noopener noreferrer" className={styles.ctaOutline}>Book a Free Call</a>
+            <a href="https://apply.getapprovedwith.com/app/signup/p/saxton/darrentsai" target="_blank" rel="noopener noreferrer" className={styles.ctaPrimary}>Apply Now</a>
+            <a href="https://calendly.com/realdarrentsai/15min" target="_blank" rel="noopener noreferrer" className={styles.ctaOutline}>Book a Free Call</a>
           </div>
         </div>
       </div>

@@ -90,7 +90,6 @@ export default function HeroSection() {
       <div className={styles.content}>
         <div className={styles.eyebrow}>
           <span className={styles.eyebrowLine} />
-          <span className={styles.eyebrowText}>Smarter Home Buyers</span>
         </div>
 
         <div className={styles.headline}>

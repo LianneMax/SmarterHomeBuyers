@@ -31,7 +31,7 @@ const FEATURED = {
 const SECONDARY = [
   { id: "TD1ahQAGkuQ", title: "VA vs Conventional: Which Loan Is Right for You?" },
   { id: "ulTVOMnOVS4", title: "How To Buy A House In 2024: 5 Steps" },
-  { id: "I4sXpzq5AF0", title: "5 Mortgage Mistakes That Cost You Thousands" },
+  { id: "49rV9lPrSFs", title: "Mortgage - How To Get The Best Interest Rate" },
 ];
 
 const PLAYLISTS: PlaylistItem[] = [
@@ -168,26 +168,6 @@ export default function VideoSection() {
           </div>
         </div>
 
-        {/* Playlists */}
-        <div ref={playlistsRef} className={`${styles.playlistsSection} reveal`}>
-          <div className={styles.playlistsHeader}>
-            <h3 className={styles.playlistsTitle}>Browse the Series</h3>
-            <p className={styles.playlistsSub}>Structured playlists for wherever you are in the journey.</p>
-          </div>
-          <div className={styles.playlistsGrid}>
-            {PLAYLISTS.map((p) => (
-              <PlaylistFlipCard
-                key={p.title}
-                title={p.title}
-                description={p.description}
-                badge={p.badge}
-                gradient={p.gradient}
-                url={p.url}
-                icon={p.icon}
-              />
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   );
